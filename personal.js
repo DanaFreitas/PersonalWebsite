@@ -1,0 +1,74 @@
+//Link to other pages.
+function github() {
+    window.open("https://github.com/DanaFreitas")
+}
+
+function linkedin() {
+    window.open("https://www.linkedin.com/in/dana-freitas-69ab7298/")
+}
+
+function dribbble() {
+    window.open("https://dribbble.com/DanaFreitas")
+}
+
+
+function minimuseum() {
+    window.open("https://github.com/DanaFreitas/MiniMuseum")
+}
+
+function collatz() {
+    window.open("https://github.com/DanaFreitas/CollatzConjecture")
+}
+
+function sql() {
+    window.open("https://github.com/DanaFreitas/SQL_Database")
+}
+
+
+
+//Toggle daymode/nightmode.
+const btn = document.querySelector("#themebutton");
+const theme = document.querySelector("#themelink")
+
+btn.addEventListener("click", function()
+{ if (theme.getAttribute("href") == "personal.css"){
+    theme.href="personallight.css";
+    document.getElementById('themebutton').innerHTML= "Click for nightmode."
+} else {
+
+    theme.href = "personal.css";
+    document.getElementById('themebutton').innerHTML= "Click for daymode."
+
+}
+
+});
+
+
+
+
+//Toggle daymode/nightmode.
+const btn2 = document.querySelector("#themebutton2");
+
+btn2.addEventListener("click", function()
+{ if (theme.getAttribute("href") == "personal.css"){
+    theme.href="personallight.css";
+    document.getElementById('themebutton').innerHTML= "Click for nightmode."
+} else {
+
+    theme.href = "personal.css";
+    document.getElementById('themebutton').innerHTML= "Click for daymode."
+
+}
+
+});
+
+//Trigger dropdown menu.
+function hamburger() {
+    var show = document.getElementById("dropdowncontent")
+
+    if (show.style.display == "none") {
+        show.style.display = "flex"}
+    else { show.style.display = "none"}
+    
+}
+

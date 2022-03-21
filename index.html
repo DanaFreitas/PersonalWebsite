@@ -1,0 +1,179 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="personal.css" id="themelink">
+</head>
+
+<body>
+
+    <div id="topbar">
+        <button class="section" id="name" onclick="window.location.href='index.html'">Dana Freitas.com</button>
+        <button class="section" onclick="window.location.href='index.html#introbox'">Intro</button>
+        <button class="section" onclick="window.location.href='index.html#skillstitle'">Skills</button>
+        <button class="section" onclick="window.location.href='index.html#portfoliotitle'">Portfolio</button>
+        <button class="section" onclick="window.location.href='index.html#footer'">Contact </button>
+        <button class="section" id="themebutton">Click for daymode.</button>
+
+    </div> 
+
+<div id="dropdownmenu">
+   <div id="hamburgerbox"  onclick="hamburger()">
+    <div id="hamburgerbun">
+        <div class="hamburgerpiece"></div>
+        <div class="hamburgerpiece"></div>
+        <div class="hamburgerpiece"></div> 
+    </div>
+    <button   id="name" onclick="window.location.href='index.html'">Dana Freitas.com</button>
+     <button  id="themebutton2">Click for daymode.</button>
+
+
+   </div>
+
+
+</div>
+
+<div id="dropdowncontent">
+    <button class="dropdownitem" onclick="window.location.href='index.html#introbox'">Intro</button>
+    <button class="dropdownitem" onclick="window.location.href='index.html#skillstitle'">Skills</button>
+    <button class="dropdownitem" onclick="window.location.href='index.html#portfoliotitle'">Portfolio</button>
+    <button class="dropdownitem" onclick="window.location.href='index.html#footer'">Contact </button>
+</div>
+
+    <div id="introbox">
+        <div class="intro"></div>
+        <img src="images/Dana.jpg" id="profile" class="intro">
+        <div id="Introduction" class="intro">Hello, I am Dana Freitas, aspiring web developer.
+            I am currently in school, and there I have discovered how fascinating it is. Web development, to is, is the
+            fusion between art and science,
+            a perfect result of the combonation of each. That is why I learn it with curiosity and passion.<br><br> I am
+            interested in learning
+            a wide variety of techniques and tools to learn this craft. My ultimate goal is to obtain employment, and
+            this website is evidence.
+            Along with learning spanish and writing fiction, I am practicing programming in my spare time.</div>
+        <div class="intro"></div>
+
+    </div>
+
+ 
+    <div id="skillstitle">Skills</div>
+
+
+    <div id="skillsbox">
+
+        <img src="images/html.png" class="skillimg">
+        <img src="images/css.png" class="skillimg">
+        <img src="images/js.png" class="skillimg">
+        <div class="skilldescription">HTML</div>
+        <div class="skilldescription">CSS</div>
+        <div class="skilldescription">JAVASCRIPT</div>
+        <img src="images/git.png" class="skillimg">
+        <img src="images/photoshop.png" class="skillimg">
+        <img src="images/sql.png" class="skillimg">
+        <div class="skilldescription">GIT</div>
+        <div class="skilldescription">PHOTOSHOP</div>
+        <div class="skilldescription">SQL</div>
+
+    </div>
+
+
+    <div id="skillsbox2">
+        <img src="images/html.png" class="skillimg">
+        <div class="skilldescription">HTML</div>
+        <img src="images/css.png" class="skillimg">
+        <div class="skilldescription">CSS</div>
+        <img src="images/js.png" class="skillimg">
+        <div class="skilldescription">JAVASCRIPT</div>
+        <img src="images/git.png" class="skillimg">
+        <div class="skilldescription">GIT</div>
+        <img src="images/photoshop.png" class="skillimg">
+        <div class="skilldescription">PHOTOSHOP</div>
+        <img src="images/sql.png" class="skillimg">
+        <div class="skilldescription">SQL</div>
+
+    </div>
+
+
+
+    <div id="portfoliotitle">Portfolio</div>
+
+    <div id="portfoliobox">
+        <img src="images/minimuseum.png" class="portfolioimage" onclick="minimuseum()">
+        <img src="images/collatzconjecture.png" class="portfolioimage" onclick="collatz()">
+        <img src="images/sqlproject.png" class="portfolioimage" onclick="sql()">
+        <div class="portfoliodescription">This project is a hypothetical museum made out of a woman's ancestral home in
+            the United States.
+            It features notably both a gallery of the items and a menu of food served there. This is done through
+            Jquery, plus photoshop to turn some of the
+            vertical images horizontal.</div>
+        <div class="portfoliodescription">The collatz conjecture is a mathematical conjecture that has not been solved
+            yet. It is notable for being easy to understand
+            for the average person. If you take an odd whole integer, multiply it be 3x+1. If it is even, x/2. Repeat
+            these steps. Eventually, you will reach the pattern or 4, 2, 1, 4. The
+            issue is whether or not there is an exception to this pattern. With this website, you can input your own
+            numbers, and see if you can discover an exception.
+        </div>
+        <div class="portfoliodescription">This is a database created by SQL, about a contracting company. This includes
+            files that show the creation of the database along with questions
+            that are solved, proving an ability to both create and manipulate this data.
+        </div>
+
+    </div>
+
+
+    <div id="portfoliobox2">
+    <img src="images/minimuseum.png" class="portfolioimage" onclick="minimuseum()">
+    <div class="portfoliodescription">This project is a hypothetical museum made out of a woman's ancestral home in
+        the United States.
+        It features notably both a gallery of the items and a menu of food served there. This is done through
+        Jquery, plus photoshop to turn some of the
+        vertical images horizontal.</div>
+        <img src="images/collatzconjecture.png" class="portfolioimage" onclick="collatz()">
+        <div class="portfoliodescription">The collatz conjecture is a mathematical conjecture that has not been solved
+            yet. It is notable for being easy to understand
+            for the average person. If you take an odd whole integer, multiply it be 3x+1. If it is even, x/2. Repeat
+            these steps. Eventually, you will reach the pattern or 4, 2, 1, 4. The
+            issue is whether or not there is an exception to this pattern. With this website, you can input your own
+            numbers, and see if you can discover an exception.
+        </div>
+        <img src="images/sqlproject.png" class="portfolioimage" onclick="sql()">
+        <div class="portfoliodescription">This is a database created by SQL, about a contracting company. This includes
+            files that show the creation of the database along with questions
+            that are solved, proving an ability to both create and manipulate this data.
+        </div>
+    </div>
+
+
+    <div id="contactmetitle">Contact me</div>
+
+    <div class="contactbox">
+        <form method="post" action="contactform.php">
+            <input type="text" id="formname" class="inputitem" placeholder="name"><br>
+            <input type="text" id="subject" class="inputitem" placeholder="subject"><br>
+
+            <input type="email" id="email" class="inputitem" placeholder="email address"><br>
+            <textarea id="textarea" placeholder="Tell me your thoughts here." class="inputitem"></textarea><br>
+            <input type="submit" value="SUBMIT" id="submit" class="inputitem"> </input>
+        </form>
+    </div>
+
+    <div id="footer">
+        <img src="images/github.png" class="footerimg" onclick="github()">
+        <img src="images/linkedin.png" class="footerimg" onclick="linkedin()">
+        <img src="images/dribbble.png" class="footerimg" onclick="dribbble()">
+        <button class="footerbutton" onclick="github()">GITHUB</button>
+        <button class="footerbutton" onclick="linkedin()">LINKEDIN</button>
+        <button class="footerbutton" onclick="dribbble()">DRIBBBLE</button>
+    </div>
+
+</body>
+<script src="personal.js"></script>
+
+</html>
