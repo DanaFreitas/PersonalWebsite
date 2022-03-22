@@ -2,10 +2,14 @@ html {
     background-image: url("images/white.jpg");
   }
   
+  @media only screen and (min-width: 769px) {
+    body {margin-left: 100px; margin-right: 100px;}
+  }
+  
   
   button.section {
     color: black;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     border: none;
     font-size: 16px;
   }
@@ -28,7 +32,7 @@ html {
   
   #name {
     color: black;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     border: none;
     font-size: 16px;
   }
@@ -40,22 +44,21 @@ html {
   
   #themebutton {
     color: black;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     border: none;
     font-size: 16px; margin-right: 10px;
   }
   #themebutton2 {
     color: black;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     border: none;
     font-size: 16px;margin-right: 10px;
   }
   
   #formname {
     color: black;
-    background-color: white;
-    border: none;
-    font-size: 16px;
+    background-color: white; 
+  
   }
   
   #hamburgerbox:hover .dropdownitem {height:30px; width:150px;} 
@@ -64,14 +67,14 @@ html {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    position:fixed; z-index: 1; width:100%; background-color:  #a6a3a2; top:0;
+    position:fixed; z-index: 1; width:100%; background-color:  #f0f0f0; top:0;
   }
   
   #dropdownmenu .dropdownnitem:hover {
     color: red;
   }
   
-  .dropdownitem {color:black;background-color:  #a6a3a2;}
+  .dropdownitem {color:black;background-color:  #f0f0f0;}
   
   
   #dropdownmenu {    display: flex;
@@ -91,7 +94,7 @@ html {
   @media only screen and (min-width: 769px) {
   
     #topbar {
-      background-color:  #a6a3a2;
+      background-color:  #f0f0f0;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -131,8 +134,8 @@ html {
   
   
   #Introduction {
-    background-color:  #a6a3a2;
-    
+    /*background-color:  #f0f0f0; */
+   background-color: #f0f0f0;
   }
   
   #introbox {
@@ -189,7 +192,7 @@ html {
     grid-template-columns: 1fr 1fr;
     padding-top: 70px;
     justify-items: center;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
 
   }
   #skillsbox {
@@ -206,7 +209,7 @@ html {
       grid-gap: 20px;
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-evenly;
-      background-color:  #a6a3a2;
+      background-color:  #f0f0f0; 
       padding: 30px 0px;
       justify-items: center;
     }
@@ -259,9 +262,9 @@ html {
     justify-content: space-evenly;
     padding: 30px 0px;
     justify-items: center;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
   }
-  
+ /* f0f0f0*/
   #portfoliobox2 {
     display: none;
   }
@@ -271,7 +274,7 @@ html {
     grid-template-columns: 1fr;
     padding-top: 70px;
     justify-items: center;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
 
   }
   
@@ -301,7 +304,7 @@ html {
         justify-content: space-evenly;
         padding: 30px 0px;
         justify-items: center;
-        background-color:  #a6a3a2;
+        background-color:  #f0f0f0;
       }
       
       #portfoliobox2 {
@@ -345,7 +348,7 @@ html {
   }
   #submit {
     color: black;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
   }
   #submit:hover {
     color: red;
@@ -389,7 +392,7 @@ html {
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     padding: 30px 0px;
     justify-items: center;
   }
@@ -412,7 +415,7 @@ html {
   {  #footer {grid-gap: 20px;}
   
   .footerbutton {
-    background-color:  #a6a3a2;
+    background-color:  #f0f0f0;
     color: black;
     border: none;
     font-size: 20px;}

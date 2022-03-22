@@ -2,6 +2,11 @@ html {
   background-image: url("images/black.jpg");
 }
 
+@media only screen and (min-width: 769px) {
+  body {margin-left: 100px; margin-right: 100px;}
+}
+
+img.portfolioimage {outline-style:solid; outline-color: white;}
 
 button.section {
   color: white;
@@ -54,8 +59,7 @@ button:hover {
 #formname {
   color: white;
   background-color: white;
-  border: none;
-  font-size: 16px;
+  
 }
 
 #hamburgerbox:hover .dropdownitem {height:30px; width:150px;} 

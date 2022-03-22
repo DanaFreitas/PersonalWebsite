@@ -52,11 +52,11 @@ const btn2 = document.querySelector("#themebutton2");
 btn2.addEventListener("click", function()
 { if (theme.getAttribute("href") == "personal.css"){
     theme.href="personallight.css";
-    document.getElementById('themebutton').innerHTML= "Click for nightmode."
+    document.getElementById('themebutton2').innerHTML= "Click for nightmode."
 } else {
 
     theme.href = "personal.css";
-    document.getElementById('themebutton').innerHTML= "Click for daymode."
+    document.getElementById('themebutton2').innerHTML= "Click for daymode."
 
 }
 
