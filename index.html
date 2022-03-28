@@ -138,7 +138,7 @@
         <img src="images/collatzconjecture.png" class="portfolioimage" onclick="collatz()">
         <div class="portfoliodescription">The collatz conjecture is a mathematical conjecture that has not been solved
             yet. It is notable for being easy to understand
-            for the average person. If you take an odd whole integer, multiply it be 3x+1. If it is even, x/2. Repeat
+            for the average person. If you take an odd whole integer, multiply it by 3x+1. If it is even, x/2. Repeat
             these steps. Eventually, you will reach the pattern or 4, 2, 1, 4. The
             issue is whether or not there is an exception to this pattern. With this website, you can input your own
             numbers, and see if you can discover an exception.
@@ -155,12 +155,12 @@
 
     <div class="contactbox">
         <form method="post" action="contactform.php">
-            <input type="text" id="formname" class="inputitem" placeholder="name"><br>
-            <input type="text" id="subject" class="inputitem" placeholder="subject"><br>
+            <input type="text" id="formname" name="formname" class="inputitem" placeholder="name"><br>
+            <input type="text" id="subject" name="subject" class="inputitem" placeholder="subject"><br>
 
-            <input type="email" id="email" class="inputitem" placeholder="email address"><br>
-            <textarea id="textarea" placeholder="Tell me your thoughts here." class="inputitem"></textarea><br>
-            <input type="submit" value="SUBMIT" id="submit" class="inputitem"> </input>
+            <input type="email" id="email" name="email" class="inputitem" placeholder="email address"><br>
+            <textarea id="textarea" name="textarea" placeholder="Tell me your thoughts here." class="inputitem"></textarea><br>
+            <input type="submit" value="SUBMIT" id="submit" name="submit" class="inputitem"> </input>
         </form>
     </div>
 
