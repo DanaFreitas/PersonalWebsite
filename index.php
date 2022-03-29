@@ -157,7 +157,12 @@
         <form method="post" action="contactform.php">
             <input type="text" id="formname" name="formname" class="inputitem" placeholder="name"><br>
             <input type="text" id="subject" name="subject" class="inputitem" placeholder="subject"><br>
+<<<<<<< HEAD:index.php
             <input type="email" id="email" name="mail" class="inputitem" placeholder="email address"><br>
+=======
+
+            <input type="email" id="email" name="email" class="inputitem" placeholder="email address"><br>
+>>>>>>> 269b3f46a734d9cef47877eb7d286a0ccf7fec21:index.html
             <textarea id="textarea" name="textarea" placeholder="Tell me your thoughts here." class="inputitem"></textarea><br>
             <input type="submit" value="SUBMIT" id="submit" name="submit" class="inputitem"> </input>
         </form>
