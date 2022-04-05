@@ -17,7 +17,3 @@ header("Location: index.html?mailsend");
 }
 
 ?>
-=======
-header("Location: index.php?mailsend");
-}
->>>>>>> 269b3f46a734d9cef47877eb7d286a0ccf7fec21
