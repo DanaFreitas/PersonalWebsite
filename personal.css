@@ -7,6 +7,8 @@ html {
 }
 
 img.portfolioimage {outline-style:solid; outline-color: white;}
+img.portfolioimagenode {outline-style:solid; outline-color: white;}
+
 
 button.section {
   color: white;
@@ -136,6 +138,7 @@ button:hover {
 
 #Introduction {
   color: white;
+  padding-top: 25px;
 }
 
 #introbox {
@@ -244,12 +247,24 @@ button:hover {
   padding-bottom: 20px;
 
 }
+
+
+.portfolioimagenode {justify-items: center;  height: 100px;
+  width: 200px;
+  transition: transform 0.2s;    
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-left: 150px;
+}
+
+
 .portfolioimage:hover {
   transform: scale(1);
 }
 .portfoliodescription {
   padding-top: 40px;
   padding-bottom: 20px;
+
 
   color: white;
 }
@@ -281,9 +296,27 @@ display: none;
 }
 
 
-@media only screen and (min-width: 769px) {
+
+.clickhere { height:30px; background-color: white; margin:10px; width:90%; align-items: center;}
+.clickhere2 { height:30px; background-color: white; margin:10px; width:250px;}
+
+
+.portfoliodescriptionbox {display:flex; flex-direction: column;}
+
+.buttoncontain {display:block; margin: auto; align-items: center;} 
+
+
+@media only screen and (min-width: 1150px) {
+
+  .buttoncontain {display:block; margin: auto; align-items: center;} 
+
+
   .portfolioimage{ padding-top: 0px;
   padding-bottom: 0px; }
+
+  .portfolioimagenode{ padding-top: 0px;
+    padding-bottom: 0px; margin:auto;}
+  
 
   .portfolioimage:hover {
     transform: scale(1);}
@@ -291,6 +324,10 @@ display: none;
     .portfoliodescription {
       padding-top: 0px;
       padding-bottom: 0px;
+      padding-left :20px; 
+      padding-right :20px; 
+    
+
     }
 
     #portfoliobox {
@@ -313,7 +350,18 @@ display: none;
   }
 
 
+
+
+
+
+
+
 }
+
+
+
+
+
 
 
 
