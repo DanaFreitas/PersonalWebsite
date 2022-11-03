@@ -13,15 +13,34 @@ function dribbble() {
 
 
 function minimuseum() {
-    window.open("https://github.com/DanaFreitas/MiniMuseum")
+    window.open("https://mrsmasonminimuseum.com/")
 }
 
 function collatz() {
-    window.open("https://github.com/DanaFreitas/CollatzConjecture")
+    window.open("https://thecollatzconjecture.com/")
 }
 
 function sql() {
     window.open("https://github.com/DanaFreitas/SQL_Database")
+}
+
+function node() {
+window.open("https://danafreitasnodejsfinal.herokuapp.com/")
+}
+
+
+
+
+function minimuseumgithub() {
+    window.open("https://github.com/DanaFreitas/MiniMuseum")
+}
+
+function collatzgithub() {
+    window.open("https://github.com/DanaFreitas/CollatzConjecture")
+}
+
+function nodegithub() {
+window.open("https://github.com/DanaFreitas/node.js")
 }
 
 
