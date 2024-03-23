@@ -136,6 +136,8 @@ html {
   #Introduction {
     /*background-color:  #f0f0f0; */
    background-color: #f0f0f0;
+   padding-top: 25px;
+
   }
   
   #introbox {
@@ -264,6 +266,20 @@ html {
     justify-items: center;
     background-color:  #f0f0f0;
   }
+
+
+
+  .clickhere { height:30px; background-color: black; margin:10px; width:90%; align-items: center;}
+  .clickhere2 { height:30px; background-color: black; margin:10px; width:250px;}
+  
+  
+  .portfoliodescriptionbox {display:flex; flex-direction: column;}
+  
+  .buttoncontain {display:block; margin: auto; align-items: center;} 
+  
+
+
+
  /* f0f0f0*/
   #portfoliobox2 {
     display: none;
@@ -286,6 +302,10 @@ html {
   
   
   @media only screen and (min-width: 769px) {
+
+    .buttoncontain {display:block; margin: auto; align-items: center;} 
+
+
     .portfolioimage{ padding-top: 0px;
     padding-bottom: 0px; }
   
@@ -295,6 +315,9 @@ html {
       .portfoliodescription {
         padding-top: 0px;
         padding-bottom: 0px;
+        padding-left :20px; 
+        padding-right :20px; 
+  
       }
   
       #portfoliobox {
