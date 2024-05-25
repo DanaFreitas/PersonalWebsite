@@ -1,0 +1,310 @@
+3/22
+
+
+3/22
+
+COMPLETE lack of 7-1 model
+	add one
+the onclicks in the buttons
+	make a script to have the sections scroll to that part
+light/darkmode css
+	
+lack of dribble
+	stick SOMETHING in there
+the contact form
+	use google forms
+rendering: images go first
+	have everything be simultaneous
+picture had bad shadowing
+	get better picture
+description
+	make new one
+skills
+	update
+sites
+	update
+the lack of a slider
+	make one
+
+
+sass
+	abstracts
+		mixins
+		variables
+	base
+		global
+		typography
+	components
+		buttons
+		form
+		images
+		menusliding
+	layout
+		footer
+		navbar
+		section
+		title
+	pages
+		???
+	themes
+		???
+	vendors
+		???
+	main.scss
+
+
+
+
+const defaultMenuButton =      document.getElementsByClassName("header__defaultmenu--item");
+const responsiveMenuButton =   document.getElementsByClassName("header__responsivemenu--item");
+const defaultMenuArray = Array.from(defaultMenuButton);
+const responsiveMenuArray = Array.from(responsiveMenuButton);
+
+const fusedMenuArray = defaultMenuArray.concat(responsiveMenuArray);
+
+
+
+const grave = document.getElementsByClassName("grave__Grave--CrossWrapper");
+
+let contain = []
+
+for (let i = 0; i < fusedMenuArray.length; i++) {
+  
+  let thehref = fusedMenuArray[i].getAttribute("href");
+  contain.push(thehref);
+  
+}
+
+for (let i = 0; i < fusedMenuArray.length; i++) {
+  fusedMenuArray[i].addEventListener("click", () => {
+    let thehref = fusedMenuArray[i].getAttribute("href");
+    let hrefslice = thehref.slice(1);
+    window.location.href = `${hrefslice}.html`;
+    contain = []
+  });
+}
+
+
+
+I had started making the 7-1. I need to find out what to do  about the dark/light mode. likely sass will be helpful. Use variables and if statements based
+on whether the slider is on 
+    if on, X variable active, if off, its display none?
+
+	3/23
+
+	Need to work on the toggle button
+
+	fixded SOME of the javascript. and migrated the css to proper files and trimmer down. now need to make an if staement and variables for
+	the day/night mode code
+
+5/14 Need to replace a lot 
+	update the code
+	make new sections
+	
+
+	the code issues
+	need to have 1 version of sections, not 2
+	get rid of onclick
+	need to have section names, not everything be div
+	
+
+	need to input the js oode to make the menus work
+
+
+
+	5/15
+
+	Have changed some html code. need to download site screenshots and use for personalsite
+
+
+5/16
+
+I noticed that there were two different eleements with the id of name. was that the reason, so long ago that I could not get the forms to work?
+
+I also saw a stray </input> tag. 
+
+Use html validators more
+
+do I make <li> otu fo the portfolio stuff?
+
+replaced "clickhere" with "websitelink"
+
+worked on replacing the sites shown visually. also improved tags. 
+will need to switch over and fix the css for everything now. maybe need old version of the code for comparison
+also, clean up the shortcuts page for my folders
+
+
+5/18
+
+
+I did a lot to give everything their owns sections and have the right styling
+
+I need to center the into AND get rid of the "first" of the top sections
+Have each of the portfolio pieces be equalish size.
+center the about section in responsive.
+reqrite the about section in responsive
+
+
+5/19
+
+to even everything out, it seems like I might have to use flex-grow or flex-shrink
+
+I need to either have the buttons the same distance from the bottom
+	issue: the long paragraph causes blockage
+
+OR 
+
+I can have the paragraphs take up the same amount of text
+	issue: how can they be compared to each other? they are cousins
+		unles the comparison is with flexboxes as a whole
+
+The desperate plan is to simple sheink the description length.
+
+
+
+an issue is that the default heaer location is <header>. the pc one is <ul topbar>
+
+I need them to be identical
+
+somewhat fused together. need to make links
+
+5/19
+
+links done. fairly easy with importing.
+next need to make dropdown menu 
+the current code is spilling over into the navbar section. remove and move some to the menusliding section, the part that defines the shape of the
+menu. that way, the animations can be added.
+
+also, be careful about the menu template from the menu project. If I want the menu to dropdown from the top inside of the side, I will need to do
+some things differently.
+
+And I will need to add the code so the sliding and the responsiveness work.
+
+Also, don't forget the variables to switch between modes.
+
+25min
+
+
+add more to the nacbar for mobile. integrate the animation. remmber yhe menu is dosplay none
+make sure the color changes with hover over
+
+connect the menu with the javascript
+
+
+5/20 ctrl+j end terminal
+
+I added in the menu. It also successfully will send to the right section
+
+I need to seperate the javascript code into 2 parts: one that concerns the opening menu, and one that concerns the links further below.
+One issue is formatting the opening. I have realied that the code for this site, the mexican site, and the edfault menu all look different.
+I need to figure out what is best.
+
+With the issue of the menu items being spaced properly, PART of the issue can be solved with proper padding. I just need to deal with some ofht etitles
+being too long. when they responsively change, that alters the menu
+
+
+greatly improved menu. need to adjust the responsiveness of the hamburger AND the ratio of the skills logos
+
+5/22
+
+Done. Now for links, do I make an array with a for loop? Sounds right.
+or do I give hrefs to everything?
+
+tried making a link. got 
+
+Content-Security-Policy: The page’s settings blocked the loading of a resource (img-src) at http://127.0.0.1:5500/favicon.ico because it violates the following directive: “default-src 'none'”
+
+
+
+
+5/23 
+
+The issue was incorrcet variable declaration.
+also. note the difference ebtween
+
+    window.open(thehref)
+    window.location.href= (thehref)
+
+do the burger
+
+added some padding
+
+js issues lines 70,235 menu
+Uncaught TypeError: can't access property "setAttribute", MenuButton[i] is undefined
+
+
+
+the header and the navbar need to be seperate because of responsiveness.
+make sure to have the burger icon removed with responsiveness.
+	likely has to do with the "show" class
+
+fixed formatting with my name. 
+
+
+
+issue: in the menu template, the default_menu_wrapper controls the spacing of those top elements. it stays when things are default.
+in mine, it is controlling the appearance of the sliding menu. need to be gone by default.
+Need to seperate the 2
+
+figured out the proper code from the template
+
+
+but NOW, the buttons on the menu arent working 
+Uncaught ReferenceError: getElementPositionRelativeToDocument is not defined menu.js:158:34
+Uncaught ReferenceError: MenuArray is not defined menu.js:250:25
+
+
+
+top,intro,and skills buttons all work
+
+<a class="section header__responsivemenu--item" type="button" data-button="responsivemenuitem" href="index.html#openingsection">
+menu.js:191:9
+<h1 id="portfoliotitle" class="subtitle" data-subheader="skills">
+menu.js:143:11
+1083 is the toprelativetodocument menu.js:147:11
+offsetposition 898  is 85 minus 1083
+
+
+
+
+<a class="section header__responsivemenu--item" type="button" data-button="responsivemenuitem" href="index.html#footer">
+menu.js:191:9
+undefined menu.js:143:11
+Uncaught TypeError: can't access property "getBoundingClientRect", section is undefined
+    getElementPositionRelativeToDocument http://127.0.0.1:5500/menu.js:144
+    Responsivescroll http://127.0.0.1:5500/menu.js:192
+    Responsivescroll http://127.0.0.1:5500/menu.js:190
+    <anonymous> http://127.0.0.1:5500/menu.js:130
+    EventListener.handleEvent* http://127.0.0.1:5500/menu.js:126
+
+
+	an issue is that the tites and the links are all 1 off distorted
+		ex, click top go to intro
+		click intro go to skills
+		at portfolio on, there is nothing
+
+	need to be more descriminating in terms of what the subsections of the website are called
+
+	have the sections be based on some header vs subheader. that is what is being scrolled to
+
+Need to get the danafreitas.com to because clickable. and issue is that top and danafreitas link to the same thing
+
+have it operate seperately?
+
+got rid of the top button.
+problem still there. need to altar the danafreitas.com?
+haev better console.logs to help find the problem. trim some fat
+
+it mostly works. an issue that that contact-> intro doesnt scroll all the way.
+issue may be related how how there are multiple(n+1) loops instead of 1
+	add a counter?
+	did, the count is n+1 no matter what. is a problem for efficiency, but seperate from the intro problem
+
+
+5/24
+
+I cant have loops in loops. 
+
+the default/responsivescrolls are only happening once.
+The issues are starting later.
+responsivescroll is looping the button several times because of the for loop in there. 

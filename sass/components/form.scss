@@ -1,0 +1,57 @@
+
+  .inputitem {
+    margin: .5rem;
+    width: 15rem;
+  }
+  textarea {
+    height: 15rem;
+    width: 17rem;
+  }
+  .contactbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #submit {
+    color: white;
+    background-color: black;
+  }
+  #submit:hover {
+    color: red;
+  }
+  
+
+  #formname {
+    color: black;
+    background-color: white;
+    
+  }
+
+@media only screen and (min-width: 709px) {
+    textarea {
+      height: 12rem;
+      width: 25rem;
+    }
+    .contactbox {
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    form {
+      padding: 2rem 0rem;
+    }
+    .inputitem {
+      margin: .5rem;
+      width: 25rem;
+    }
+  }
+  
+  form {
+    padding: .5rem 0rem;
+    align-items: center;
+  }  
+  
+
+
+

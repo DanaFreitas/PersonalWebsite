@@ -1,0 +1,611 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("../images/black.jpg");
+  font-size: calc(15px + 0.390625vw);
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+.subtitle {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+button.section {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  color: red;
+}
+
+.buttoncontain {
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+
+.clickhere {
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+  width: 90%;
+  align-items: center;
+}
+
+.clickhere2 {
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+  width: 250px;
+}
+
+.clickhere {
+  height: 30px;
+  background-color: black;
+  margin: 10px;
+  width: 90%;
+  align-items: center;
+}
+
+.clickhere2 {
+  height: 30px;
+  background-color: black;
+  margin: 10px;
+  width: 250px;
+}
+
+.portfoliodescriptionbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttoncontain {
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+
+.inputitem {
+  margin: 0.5rem;
+  width: 15rem;
+}
+
+textarea {
+  height: 15rem;
+  width: 17rem;
+}
+
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#submit {
+  color: white;
+  background-color: black;
+}
+
+#submit:hover {
+  color: red;
+}
+
+#formname {
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (min-width: 709px) {
+  textarea {
+    height: 12rem;
+    width: 25rem;
+  }
+  .contactbox {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  form {
+    padding: 2rem 0rem;
+  }
+  .inputitem {
+    margin: 0.5rem;
+    width: 25rem;
+  }
+}
+form {
+  padding: 0.5rem 0rem;
+  align-items: center;
+}
+
+img.portfolioimage {
+  outline-style: solid;
+  outline-color: white;
+}
+
+img.portfolioimagenode {
+  outline-style: solid;
+  outline-color: white;
+}
+
+.menuclassexit {
+  animation-name: menudisappear;
+  transition: 1s;
+  animation-fill-mode: forwards;
+  display: block;
+  z-index: 40;
+  position: fixed;
+  background-color: grey;
+  color: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow-x: hidden;
+  margin: 0;
+  animation-direction: normal;
+  animation-duration: 0.75s;
+  text-align: center;
+  margin-top: 4rem;
+  color: white;
+}
+
+.menuclassenter {
+  animation-name: menuappear;
+  display: block;
+  z-index: 40;
+  position: fixed;
+  background-color: grey;
+  color: black;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  overflow-x: hidden;
+  margin: 0;
+  animation-direction: normal;
+  animation-duration: 0.75s;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@keyframes menudisappear {
+  0% {
+    transform: translate(0px, 0px);
+    display: block;
+  }
+  100% {
+    transform: translate(0px, 50%);
+    display: none;
+  }
+}
+@keyframes menuappear {
+  0% {
+    transform: 0px, -500px;
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.header__hamburger {
+  left: 0vw;
+  top: 0vw;
+  display: block;
+  z-index: 5;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.header__hamburger--hamburger-bit {
+  width: 3em;
+  height: 0.5em;
+  background-color: black;
+  margin: 0.5em 0;
+  transition: 0.4s;
+}
+
+.show > .header__hamburger--hamburger-bit {
+  background-color: white;
+}
+
+.show #hamburger-bit-1 {
+  transform: translate(0, 1em) rotate(-45deg);
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-2 {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+
+.show #hamburger-bit-3 {
+  transform: translate(0, -1em) rotate(45deg);
+  transition-duration: 500ms;
+}
+
+@media screen and (min-width: 769) {
+  .header__burgerholder > .header__hamburger > * {
+    display: none;
+  }
+}
+@keyframes menudisappear {
+  0% {
+    transform: translate(0px, 0px);
+    display: block;
+  }
+  100% {
+    transform: translate(-100%, 0px);
+    display: none;
+  }
+}
+@keyframes menuappear {
+  0% {
+    transform: translate(-500px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.footerbutton {
+  display: none;
+}
+
+.footerimg {
+  height: 50px;
+  width: 50px;
+}
+
+#footer {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 30px 0px;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  #footer {
+    grid-gap: 20px;
+  }
+  .footerbutton {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+  }
+  .footerimg {
+    height: 100px;
+    width: 100px;
+  }
+}
+.footerbutton {
+  display: none;
+}
+
+.footerimg {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 2rem 0rem;
+  justify-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .footerbutton {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    font-size: 20px;
+  }
+  .footerimg {
+    height: 100px;
+    width: 100px;
+  }
+}
+.header__defaultmenu--wrapper {
+  display: none;
+}
+
+.header {
+  z-index: 10;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  display: grid;
+  grid-template: "p1" "p2";
+}
+
+#headerwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+}
+
+.header__hamburger--hamburger-bit {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: white;
+  margin: 0.5rem 0;
+}
+
+#hamburgerbox:hover .dropdownitem {
+  height: 2rem;
+  width: 9rem;
+}
+
+.dropdownitem {
+  color: white;
+  background-color: black;
+}
+
+#dropdownmenu .dropdownnitem:hover {
+  color: red;
+}
+
+#dropdowncontent {
+  display: none;
+  width: 100%;
+  position: fixed;
+  justify-content: baseline;
+  padding-bottom: 20px;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#dropdowncontent:hover {
+  display: block;
+}
+
+.header__defaultmenu--item {
+  background-color: black;
+  color: #f0f0f0;
+  width: 100%;
+  top: 0;
+  padding: 3rem 0rem;
+  left: 0;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+#title {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 769px) {
+  .header__responsivemenu--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    height: 4rem;
+    grid-area: p2;
+  }
+  .header__responsivemenu--wrapper > * {
+    margin: 0.8rem;
+  }
+  .header__responsivemenu--item {
+    z-index: 11;
+    color: white;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0px;
+  }
+  #title {
+    font-size: 3rem;
+    flex: 1;
+    text-align: center;
+    margin: 0% 40% 0% 40%;
+  }
+  .header__burgerholder {
+    display: none;
+  }
+}
+#Introduction {
+  color: white;
+  padding-top: 1rem;
+  margin: 1rem;
+}
+
+#openingsection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+#profile {
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  padding: 1rem 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  #openingsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 7rem;
+    float: right;
+  }
+  #Introduction {
+    width: 50%;
+  }
+}
+#profile {
+  float: left;
+  margin: 1rem;
+}
+
+#portfoliogrid {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: black;
+  align-items: center;
+}
+
+.portfoliodescriptionbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolioimage {
+  height: 12rem;
+  width: 16rem;
+  transition: transform 0.2s;
+}
+
+.portfolioimagenode {
+  justify-items: center;
+  height: 6rem;
+  width: 12rem;
+  transition: transform 0.2s;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-left: 9rem;
+}
+
+.portfolioimage:hover {
+  transform: scale(1);
+}
+
+.portfoliodescription {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.portfolio__button {
+  color: black;
+  background-color: white;
+  margin: 1em 1em;
+  padding: 0.5em;
+}
+
+.portfolio__button:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 1150px) {
+  .buttoncontain {
+    display: block;
+    margin: auto;
+    align-items: center;
+  }
+  .portfolioimagenode {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: auto;
+  }
+  .portfolioimage:hover {
+    transform: scale(1);
+  }
+  #portfoliogrid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+    justify-items: center;
+    background-color: black;
+  }
+  .portfoliodescriptionbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .portfoliodescription {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-grow: 1;
+  }
+}
+.skillimg {
+  height: 5rem;
+  width: 5rem;
+}
+
+.skilldescription {
+  font-size: 1rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  color: white;
+}
+
+#skillsectioncontain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  #skillsectioncontain {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 2rem 0rem;
+    justify-items: center;
+  }
+  .skilldescription {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .skillimg {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

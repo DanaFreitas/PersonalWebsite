@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("../images/black.jpg");
+  font-size: calc(15px + 0.390625vw);
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

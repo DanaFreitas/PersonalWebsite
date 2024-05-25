@@ -1,260 +1,299 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="personal.css" id="themelink">
-</head>
 
-<body>
+    <link rel="stylesheet" href="sass/main.css" type="text/css" />
+  </head>
 
-    <div id="topbar">
-        <button class="section" id="name" onclick="window.location.href='index.html'">DanaFreitas.com</button>
-        <button class="section" onclick="window.location.href='index.html#introbox'">Intro</button>
-        <button class="section" onclick="window.location.href='index.html#skillstitle'">Skills</button>
-        <button class="section" onclick="window.location.href='index.html#portfoliotitle'">Portfolio</button>
-        <button class="section" onclick="window.location.href='index.html#footer'">Contact </button>
-        <button class="section" id="themebutton">Click for daymode</button>
+  <body>
+    <header id="header" class="header" data-headercontainer="default">
+      <nav>
+        <section
+          id="headerwrapper"
+          class="header__default--wrapper"
+          data-headercontainer="default"
+        >
+          <div
+            id="burgerholder"
+            class="header__burgerholder"
+            data-container="burgerholder"
+          >
+            <div
+              id="hamburger"
+              type="button"
+              class="header__hamburger"
+              data-button="hamburger"
+            >
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-1"
+                data-burger="hamburgerpiece"
+              ></div>
 
-    </div> 
+              <div
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-2"
+                data-burger="hamburgerpiece"
+              ></div>
+              <div
 
-<div id="dropdownmenu">
-   <div id="hamburgerbox"  onclick="hamburger()">
-    <div id="hamburgerbun">
-        <div class="hamburgerpiece"></div>
-        <div class="hamburgerpiece"></div>
-        <div class="hamburgerpiece"></div> 
-    </div>
-    <button   id="name" onclick="window.location.href='index.html'">DanaFreitas.com</button>
-     <button  id="themebutton2">Click for daymode</button>
+            
+                class="header__hamburger--hamburger-bit"
+                id="hamburger-bit-3"
+                data-burger="hamburgerpiece"
+              ></div>
+            </div>
+          </div>
+
+          <h1 id="title" class="nav__button" type="button" href="index.html"  data-location="defaulttag" data-subheader="Intro">DanaFreitas.com</h1>
+        </section>
+
+        <ul
+          id="ContainMenu"
+          class="header__defaultmenu--wrapper"
+          data-menustate="default"
+          role="menubar"
+        >
+          
+          <a
+            class="section header__defaultmenu--item"
+            type="button"
+            data-button="defaultmenuitem"
+            href="index.html#openingsection"
+            >Intro</a
+          >
+          <a
+            class="section header__defaultmenu--item"
+            type="button"
+            data-button="defaultmenuitem"
+            href="index.html#skillstitle"
+            >Skills</a
+          >
+          <a
+            class="section header__defaultmenu--item"
+            type="button"
+            data-button="defaultmenuitem"
+            href="index.html#portfoliotitle"
+            >Portfolio</a
+          >
+          <a
+            class="section header__defaultmenu--item"
+            type="button"
+            data-button="defaultmenuitem"
+            href="index.html#footer"
+            >Contact
+          </a>
+          <a
+            class="section header__defaultmenu--item"
+            type="button"
+            data-button="defaultmenuitem"
+            id="themebutton"
+            > Daymode</a
+            >
 
 
-   </div>
 
+            
+        </ul>
+      </nav>
 
-</div>
-
-<div id="dropdowncontent">
-    <button class="dropdownitem" onclick="window.location.href='index.html#introbox'">Intro</button>
-    <button class="dropdownitem" onclick="window.location.href='index.html#skillstitle'">Skills</button>
-    <button class="dropdownitem" onclick="window.location.href='index.html#portfoliotitle'">Portfolio</button>
-    <button class="dropdownitem" onclick="window.location.href='index.html#footer'">Contact </button>
-</div>
-
-    <div id="introbox">
-        <div class="intro"></div>
-        <img src="images/Dana.jpg" id="profile" class="intro">
-        <div id="Introduction" class="intro">Hello, I am Dana Freitas, aspiring web developer.
-            I am currently in school and that is where I discovered how fascinating it is. Web development is the
-            fusion of art and science,
-            a perfect result of the combination of each, for which is why I study it with curiosity and passion.<br><br> I am
-            interested in learning
-            a wide variety of techniques and tools to learn this craft. My ultimate goal is to obtain employment, of
-            this website as evidence.
-             I practice programming in my spare time, along with learning Spanish and writing fiction.</div>
-        <div class="intro"></div>
-
-    </div>
+       
 
  
-    <div id="skillstitle">Skills</div>
+    </header>
 
+    <main>
+      <section id="openingsection">
+        <img src="images/Dana.jpg" id="profile" class="intro" />
+        <p id="Introduction" class="intro">
+          Hello, I am Dana Freitas, aspiring web developer. I am currently in
+          school and that is where I discovered how fascinating it is. Web
+          development is the fusion of art and science, a perfect result of the
+          combination of each, for which is why I study it with curiosity and
+          passion.<br /><br />
+          I am interested in learning a wide variety of techniques and tools to
+          learn this craft. My ultimate goal is to obtain employment, of this
+          website as evidence. I practice programming in my spare time, along
+          with learning Spanish and writing fiction.
+        </p>
+      </section>
 
-    <div id="skillsbox">
+      <h1 id="skillstitle" data-subheader="skills" class="subtitle">Skills</h1>
 
-        <img src="images/html.png" class="skillimg">
-        <img src="images/css.png" class="skillimg">
-        <img src="images/js.png" class="skillimg">
-        <div class="skilldescription">HTML</div>
-        <div class="skilldescription">CSS</div>
-        <div class="skilldescription">JAVASCRIPT</div>
+      <section id="skillsectioncontain">
+        <div class="skill__example">
+          <img src="images/html.png" class="skillimg" alt="html symbol" />
+          <div class="skilldescription">HTML</div>
+        </div>
+        <div class="skill__example">
+          <img src="images/css.png" class="skillimg" alt="css symbol" />
+          <div class="skilldescription">CSS</div>
+        </div>
 
-        <img src="images/git.png" class="skillimg">
-        <img src="images/photoshop.png" class="skillimg">
-        <img src="images/sql.png" class="skillimg">
-        <div class="skilldescription">GIT</div>
-        <div class="skilldescription">PHOTOSHOP</div>
-        <div class="skilldescription">SQL</div>
+        <div class="skill__example">
+          <img src="images/js.png" class="skillimg" alt="javascript symbol" />
 
-        <img src="images/nodejs.png" class="skillimg">
-        <img src="images/reactnative.png" class="skillimg">
-        <div></div>
-        <div class="skilldescription">NODE JS</div>
-        <div class="skilldescription"> REACT NATIVE</div>
-        <div></div>
+          <div class="skilldescription">JAVASCRIPT</div>
+        </div>
+        <div class="skill__example">
+          <img src="images/git.png" class="skillimg" alt="git symbol" />
 
-    </div>
+          <div class="skilldescription">GIT</div>
+        </div>
+        <div class="skill__example">
+          <img
+            src="images/photoshop.png"
+            class="skillimg"
+            alt="photoshop symbol"
+          />
 
+          <div class="skilldescription">PHOTOSHOP</div>
+        </div>
+        <div class="skill__example">
+          <img src="images/sql.png" class="skillimg" alt="sql symbol" />
 
-    <div id="skillsbox2">
-        <img src="images/html.png" class="skillimg">
-        <div class="skilldescription">HTML</div>
-        <img src="images/css.png" class="skillimg">
-        <div class="skilldescription">CSS</div>
-        <img src="images/js.png" class="skillimg">
-        <div class="skilldescription">JAVASCRIPT</div>
-        <img src="images/git.png" class="skillimg">
-        <div class="skilldescription">GIT</div>
+          <div class="skilldescription">SQL</div>
+        </div>
+      </section>
 
-        <img src="images/photoshop.png" class="skillimg">
-        <div class="skilldescription">PHOTOSHOP</div>
-        <img src="images/sql.png" class="skillimg">
-        <div class="skilldescription">SQL</div>
+      <h1 id="portfoliotitle" data-subheader="portfolio" class="subtitle">Portfolio</h1>
 
-        <img src="images/nodejs.png" class="skillimg">
-        <div class="skilldescription">NODE JS</div>
-        <img src="images/reactnative.png" class="skillimg">
-        <div class="skilldescription"> REACT NATIVE</div>
+      <div id="portfoliogrid">
+        <section class="portfoliodescriptionbox">
+          <img
+            src="images/collatzconjecture.png"
+            class="portfolioimage"
+            alt="Picture of the collatz conjecture website"
+            data-websiteimage="collatz"
+          />
 
-    </div>
-
-
-
-    <div id="portfoliotitle">Portfolio</div>
-
-    <div id="portfoliobox">
-        <img src="images/minimuseum.png" class="portfolioimage" onclick="minimuseum()">
-        <img src="images/collatzconjecture.png" class="portfolioimage" onclick="collatz()">
-        <img src="images/sqlproject.png" class="portfolioimage" onclick="sql()">
-
-        <div class="portfoliodescriptionbox">
-        <div class="portfoliodescription">This project is a hypothetical museum made out of a woman's ancestral home in
-            the United States.
-            It features notably both a gallery of the items and a menu of food served there; this is done through
-            Jquery and photoshop to turn some of the
-            vertical images horizontal.</div>
-<div><div class="buttoncontain"><button class="clickhere" onclick="minimuseum()">Click here for the website link.</button>
-    <button class="clickhere" onclick="minimuseumgithub()">Click here for the github link.</button></div>
-
-</div></div>
-
-    <div class="portfoliodescriptionbox">
-
-        <div class="portfoliodescription">The collatz conjecture is a mathematical conjecture that has not been solved
-            yet. It is notable for being easy to understand
-            for the average person. If you take an odd whole integer, figure 3x+1. If it is even, x/2. Repeat
-            these steps, and eventually, you will reach the pattern of 4, 2, 1, 4. The
-            issue is whether there is an exception to this pattern or not? With this website: you can input your own
+          <p class="portfoliodescription">
+            The collatz conjecture is a mathematical conjecture that has not
+            been solved yet. It is notable for being easy to understand for the
+            average person. If you take an odd whole integer, figure 3x+1. If it
+            is even, x/2. Repeat these steps, and eventually, you will reach the
+            pattern of 4, 2, 1, 4. The issue is whether there is an exception to
+            this pattern or not? With this website: you can input your own
             numbers and see if you can discover an exception.
-        </div>
-        <div><div class="buttoncontain"><button class="clickhere" onclick="collatz()">Click here for the website link.</button>
-            <button class="clickhere" onclick="collatzgithub()">Click here for the github link.</button></div>
-        </div>
+          </p>
+          <div>
+            <div class="buttoncontain">
+              <div type="button" class="portfolio__button" data-button="external" href="https://thecollatzconjecture.com/">
+                Click here for the website link.
+              </div>
+              <div type="button" class="portfolio__button" data-button="external" href="https://github.com/DanaFreitas/Collatzconjecture2"> 
+                Click here for the github link.
+              </div>
             </div>
+          </div>
+        </section>
 
-            <div class="portfoliodescriptionbox">
+        <section class="portfoliodescriptionbox">
+          <img
+            src="images/Heartofmexico.png"
+            class="portfolioimage"
+            alt="Picture of the MExican restaurant website"
+            data-websiteimage="collatz"
 
-        <div class="portfoliodescription">This is a database created in SQL, about a contracting company. This includes
-            files that show the creation of the database along with questions
-            that are solved, providing an ability to both create and manipulate this data.
-        </div>
-       <div><div class="buttoncontain"><button class="clickhere" onclick="dribbble()">Click here for the website link.</button>
-            <button class="clickhere" onclick="dribbblegithub()">Click here for the github link.</button></div>
-        </div>
+          />
+
+          <p class="portfoliodescription">
+            This is a Mexican Restaurant full of declicious foods from one of
+            the most beautiful countries in the world.
+          </p>
+          <div class="buttoncontain">
+            <div type="button" class="portfolio__button" data-button="external" href="https://github.com/DanaFreitas/MexicanRestaurant">
+              Click here for the website link.
             </div>
+            <div type="button" class="portfolio__button" data-button="external" href="https://heart-of-mexico.com/">
+              Click here for the github link.
+            </div>
+          </div>
+        </section>
 
+        <section class="portfoliodescriptionbox">
+          <img
+            src="images/Mozartfanpage.png"
+            class="portfolioimage"
+            alt="Picture of the Mozart website"
+            data-websiteimage="collatz"
 
-            <!--<div><button class="clickhere" onclick="minimuseum()">Click here for the website link.</button>
-                <button class="clickhere" onclick="minimuseumgithub()">Click here for the github link.</button></div></div>
-                    <div><button class="clickhere" onclick="collatz()">Click here for the website link.</button>
-            <button class="clickhere" onclick="collatzgithub()">Click here for the github link.</button></div>
-            <div><button class="clickhere" onclick="dribbble()">Click here for the website link.</button>
-                <button class="clickhere" onclick="dribbblegithub()">Click here for the github link.</button></div>-->
-    
+          />
 
+          <p class="portfoliodescription">
+            Mozart is one of the greatest figures in musical history. This
+            website is dedicated to preserving his memory.
+          </p>
 
-            <div class="portfoliodescriptionbox">
-                <img src="images/nodesite.png" class="portfolioimagenode" onclick="node()">
+          <div class="buttoncontain">
+            <div type="button" class="portfolio__button" data-button="external" href="https://github.com/DanaFreitas/Mozart">
+              Click here for the website link.
+            </div>
+            <div type="button" class="portfolio__button" data-button="external" href="https://mozartfanpage.com/">
+              Click here for the github link.
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div> -->
 
-                <div class="portfoliodescription">This is a telemedicine website. With it,you can create an account and ask your medical questions
-                    with it, allowing the data to be stored in a central server.
-                </div>
-                <div><div class="buttoncontain"><button class="clickhere" onclick="node()">Click here for the website link.</button>
-                    <button class="clickhere" onclick="nodegithub()">Click here for the github link.</button></div>
-                </div>
-                    </div>
+      <!-- </div> -->
 
-                    <div></div>
-<div></div>
+      <h1 id="contactmetitle" data-subheader="contact"  class="subtitle">Contact</h1>
 
-    </div>
-
-
-    <div id="portfoliobox2">
-
-    <img src="images/minimuseum.png" class="portfolioimage" onclick="minimuseum()">
-    <div class="portfoliodescription">This project is a hypothetical museum made out of a woman's ancestral home in
-        the United States.
-        It features notably both a gallery of the items and a menu of food served there. This is done through
-        Jquery, plus photoshop to turn some of the
-        vertical images horizontal.</div>
-        <div><button class="clickhere2" onclick="minimuseum()">Click here for the website link.</button>
-            <br><button class="clickhere2" onclick="minimuseumgithub()">Click here for the github link.</button></div>
-
-
-        <img src="images/collatzconjecture.png" class="portfolioimage" onclick="collatz()">
-        <div class="portfoliodescription">The collatz conjecture is a mathematical conjecture that has not been solved
-            yet. It is notable for being easy to understand
-            for the average person. If you take an odd whole integer, multiply it by 3x+1. If it is even, x/2. Repeat
-            these steps. Eventually, you will reach the pattern or 4, 2, 1, 4. The
-            issue is whether or not there is an exception to this pattern. With this website, you can input your own
-            numbers, and see if you can discover an exception.
-        </div>
-        <div><button class="clickhere2" onclick="collatz()">Click here for the website link.</button>
-            <br><button class="clickhere2" onclick="collatzgithub()">Click here for the github link.</button></div>
-
-
-
-        <img src="images/sqlproject.png" class="portfolioimage" onclick="sql()">
-        <div class="portfoliodescription">This is a database created by SQL, about a contracting company. This includes
-            files that show the creation of the database along with questions
-            that are solved, proving an ability to both create and manipulate this data.
-        </div>
-        <div><button class="clickhere2" onclick="dribbble()">Click here for the website link.</button>
-            <br><button class="clickhere2" onclick="dribbblegithub()">Click here for the github link.</button></div>
-
-
-            <img src="images/nodesite.png" class="portfolioimage" onclick="node()">
-                <div class="portfoliodescription">This is a telemedicine website. With it,you can create an account and ask your medical questions
-                    with it, allowing the data to be stored in a central server.
-                </div>
-                <div><button class="clickhere2" onclick="node()">Click here for the website link.</button>
-                    <button class="clickhere2" onclick="nodegithub()">Click here for the github link.</button></div>
-                   
-
-
-    </div> 
-
-
-    <div id="contactmetitle">Contact me</div>
-
-    <div class="contactbox">
+      <section class="contactbox">
         <form method="post" action="contactform.php">
-            <input type="text" id="name" name="name" class="inputitem" placeholder="name"><br>
-            <input type="text" id="subject" name="subject" class="inputitem" placeholder="subject"><br>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="inputitem"
+            placeholder="name"
+          /><br />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="inputitem"
+            placeholder="subject"
+          /><br />
 
-            <input type="email" id="email" name="email" class="inputitem" placeholder="email address"><br>
-            <textarea id="message" name="message" placeholder="Tell me your thoughts here." class="inputitem"></textarea><br>
-            <input type="submit" value="SUBMIT" id="submit" name="submit" class="inputitem"> </input>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="inputitem"
+            placeholder="email address"
+          /><br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me your thoughts here."
+            class="inputitem"
+          ></textarea
+          ><br />
+          <input
+            type="submit"
+            value="SUBMIT"
+            id="submit"
+            name="submit"
+            class="inputitem"
+          />
         </form>
-    </div>
+      </section>
+    </main>
 
-    <div id="footer">
-        <img src="images/github.png" class="footerimg" onclick="github()">
-        <img src="images/linkedin.png" class="footerimg" onclick="linkedin()">
-        <img src="images/dribbble.png" class="footerimg" onclick="dribbble()">
-        <button class="footerbutton" onclick="github()">GITHUB</button>
-        <button class="footerbutton" onclick="linkedin()">LINKEDIN</button>
-        <button class="footerbutton" onclick="dribbble()">DRIBBBLE</button>
-    </div>
-
-</body>
-<script src="personal.js"></script>
-
+    <footer id="footer">
+      <img src="images/github.png" class="footerimg" alt="github link" />
+      <img src="images/linkedin.png" class="footerimg" alt="linkedin link" />
+      <button class="footerbutton">GITHUB</button>
+      <button class="footerbutton">LINKEDIN</button>
+    </footer>
+  </body>
+  <script src="menu.js"></script>
+  <script src="portfolio.js"></script>
 </html>

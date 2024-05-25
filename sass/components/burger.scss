@@ -1,0 +1,66 @@
+
+
+.header__hamburger {
+    left: 0vw;
+    top: 0vw;
+    display: block;
+    z-index: 5;
+    margin-top: 1em;
+    cursor: pointer;
+  }
+  
+  .header__hamburger--hamburger-bit {
+    width: 3em;
+    height: 0.5em;
+    background-color: black;
+    margin: 0.5em 0;
+    transition: 0.4s;
+  }
+  
+  .show > .header__hamburger--hamburger-bit {
+    background-color: white;
+  }
+  
+  .show #hamburger-bit-1 {
+    transform: translate(0, 1em) rotate(-45deg);
+    transition-duration: 500ms;
+  }
+  
+  .show #hamburger-bit-2 {
+    opacity: 0;
+    transition-duration: 500ms;
+  }
+  
+  .show #hamburger-bit-3 {
+    transform: translate(0, -1em) rotate(45deg);
+    transition-duration: 500ms;
+  }
+
+  @media screen and (min-width: 769) {
+    .header__burgerholder > .header__hamburger > * {
+      display: none;
+    }
+  }
+
+
+  
+
+
+  @keyframes menudisappear {
+    0% {
+      transform: translate(0px, 0px);
+      display: block;
+    }
+    100% {
+      transform: translate(-100%, 0px);
+      display: none;
+    }
+  }
+  @keyframes menuappear {
+    0% {
+      transform: translate(-500px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }

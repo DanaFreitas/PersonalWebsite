@@ -1,0 +1,213 @@
+
+
+.header__defaultmenu--wrapper {display:none;}
+
+
+  .header {
+    z-index: 10;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  display: grid;
+  grid-template: "p1" "p2";
+  }
+
+
+
+
+  
+
+#headerwrapper {    display: flex;
+  flex-direction: row; 
+justify-content: space-evenly;
+margin-left: 1rem;
+} 
+
+
+
+
+
+
+  .header__hamburger--hamburger-bit {
+    width: 3rem;
+    height: .5rem;
+    background-color: white;
+    margin: .5rem 0;
+  }
+  
+  
+
+  
+  #hamburgerbox:hover .dropdownitem {height:2rem; width:9rem;} 
+  
+
+
+
+
+
+
+  .dropdownitem {color:white;background-color: black;}
+  
+  
+
+  #dropdownmenu .dropdownnitem:hover {
+    color: red;
+  }
+  
+
+  
+  #dropdowncontent {display:none;width:100%;position:fixed;justify-content:baseline; padding-bottom:20px;
+    flex-direction: column; margin-top: 30px;}
+  
+    #dropdowncontent:hover {
+      display: block;
+    }
+  
+
+
+
+
+
+.header__defaultmenu--item {
+  background-color: black;
+  color:  #f0f0f0;
+//position:fixed;
+width:100%;
+top:0;
+padding:3rem 0rem;
+  left: 0;
+  font-size: 2.0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-decoration: none;
+}
+
+
+
+  
+#title {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+  }
+
+
+
+
+
+// .header__defaultmenu--item:hover:hover {
+// //  color: $DarkRedColor;
+// }
+
+// .header__responsivemenu--wrapper {
+// //  display: none;
+// }
+
+
+
+.header__responsivemenu--item:hover {
+  //color: $DarkRedColor;
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+  .header__responsivemenu--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    height: 4rem;
+    grid-area: p2;
+
+  }
+  .header__responsivemenu--wrapper > * {
+    margin: 0.8rem;
+  }
+  .header__responsivemenu--item {
+    z-index: 11;
+    color: white;
+    text-decoration: none;
+  }
+
+}
+  @media only screen and (min-width: 769px) {
+  
+    #header {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 10px 0px;
+    }
+  
+    #title{
+      font-size: 3rem;
+      flex:1;
+      text-align: center;
+      margin: 0% 40% 0% 40%;
+    }
+  
+    .header__burgerholder {display:none;}
+
+
+
+  }
+    
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

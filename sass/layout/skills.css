@@ -1,0 +1,40 @@
+.skillimg {
+  height: 5rem;
+  width: 5rem;
+}
+
+.skilldescription {
+  font-size: 1rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  color: white;
+}
+
+#skillsectioncontain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5rem;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  #skillsectioncontain {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 2rem 0rem;
+    justify-items: center;
+  }
+  .skilldescription {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .skillimg {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+/*# sourceMappingURL=skills.css.map */
