@@ -11,6 +11,7 @@ let ContainMenu = document.querySelector('[data-menustate="default"]');
 let ContainMenuId = document.getElementById("ContainMenu");
 let ContainMenuChildren = ContainMenu.children;
 let heropadding = document.getElementById("header").clientHeight;
+console.log(heropadding)
 const section = document.querySelectorAll("[data-subheader");
 let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
 
@@ -122,13 +123,28 @@ hamburger.addEventListener("click", () => {
 //click a menubutton
 
 
-for (let l = 0; l < MenuButton.length; l++) {
+MenuButton[0].addEventListener("click", (evt) => {
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  
+})
+
+for (let l = 1; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
-  console.log(evt)
+  
+
+    
+
+
+
   
     if (widths > 768) {
-      Responsivescroll(evt);
+      let thetarget = section[l]
+
+      //getElementPositionRelativeToDocument(evt);
+      Responsivescroll(evt, thetarget);
     } else {
+      //getElementPositionRelativeToDocument(evt)
       Defaultscroll(evt);
     }
   });
@@ -139,16 +155,13 @@ for (let l = 0; l < MenuButton.length; l++) {
 
 
 
-function getElementPositionRelativeToDocument(evt) {
-  console.log(evt);
-  let rect = evt.getBoundingClientRect();
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  let topRelativeToDocument = rect.top + scrollTop;
-  //console.log(`${topRelativeToDocument} is the toprelativetodocument`);
-  return topRelativeToDocument;
-}
+ function getElementPositionRelativeToDocument(thetarget) {
 
-
+   let rect = thetarget.getBoundingClientRect();
+   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+   let topRelativeToDocument = rect.top + scrollTop;
+   return topRelativeToDocument;
+ }
 
 
 function Defaultscroll(evt) {
@@ -162,13 +175,8 @@ function Defaultscroll(evt) {
   for (let k = 0; k < MenuButton.length; k++) {
    evt.preventDefault();
    MenuButton[k].addEventListener("click", (event) => {
-     let topRelativeToDocument = getElementPositionRelativeToDocument(
-       section[k]
-     );
+     let topRelativeToDocument = getElementPositionRelativeToDocument(section[k]);
      let offsetPosition = topRelativeToDocument - heropadding - 100; 
-     console.log(
-       `offsetposition ${offsetPosition}  is ${heropadding} minus ${topRelativeToDocument}`
-     );
      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
    });
  }
@@ -180,35 +188,18 @@ function Defaultscroll(evt) {
 
 
 
-
-
-count = 0;
-
-
-function Responsivescroll(evt) {
- //for (let k = 0; k < MenuButton.length; k++) {
+function Responsivescroll(evt, thetarget) {
    evt.preventDefault();
-   //MenuButton[k].addEventListener("click", (event) => {
-console.log(evt)
-    let topRelativeToDocument = getElementPositionRelativeToDocument(
-       section[k]
-     );
-     let offsetPosition = topRelativeToDocument - heropadding - 100; 
-     //console.log(
-      // `offsetposition ${offsetPosition}  is ${heropadding} minus ${topRelativeToDocument}`
-     //)/;
+
+
+  let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
+
+    let offsetPosition = topRelativeToDocument - heropadding - 100; 
+
      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-     count += 1;
-     console.log(count);
-     
+     offsetPosition = "";
     
-    //}
-    //);
  }
-//}
-
-
-
 
 
 

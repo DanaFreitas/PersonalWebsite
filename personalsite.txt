@@ -308,3 +308,12 @@ I cant have loops in loops.
 the default/responsivescrolls are only happening once.
 The issues are starting later.
 responsivescroll is looping the button several times because of the for loop in there. 
+
+
+
+issues with toprelativetodocument because
+its being held relative to the top of the docuemnt, not the target element
+
+I managed to figure out the issue. I had deleted a section that described the titles, but I readded it.
+
+Now I need to figure out intro
