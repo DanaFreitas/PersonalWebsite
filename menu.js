@@ -97,7 +97,7 @@ hamburger.addEventListener("click", () => {
     !ContainMenu.classList.contains("menuclassexit")
   ) {
     ContainMenu.classList.add("menuclassenter");
-    console.log("test1")
+
   }
 
   if (
@@ -107,10 +107,9 @@ hamburger.addEventListener("click", () => {
     ContainMenu.classList.remove("header__defaultmenu--wrapper");
     ContainMenu.classList.remove("menuclassexit");
     ContainMenu.classList.add("menuclassenter");
-    console.log("test2")
 
   } else if (ContainMenu.classList.contains("menuclassenter")) {
-    console.log("test3");
+
     ContainMenu.classList.add("menuclassexit");
     ContainMenu.classList.remove("menuclassenter");
 
@@ -125,13 +124,21 @@ hamburger.addEventListener("click", () => {
 
 MenuButton[0].addEventListener("click", (evt) => {
 
+
+
+  document.getElementById("hamburger").classList.toggle("show");
+  ContainMenu.classList.add("menuclassexit");
+  ContainMenu.classList.remove("menuclassenter");
+
   window.scrollTo({ top: 0, behavior: "smooth" });
+  
   
 })
 
 for (let l = 1; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
   
+    let thetarget = section[l]
 
     
 
@@ -139,13 +146,13 @@ for (let l = 1; l < MenuButton.length; l++) {
 
   
     if (widths > 768) {
-      let thetarget = section[l]
 
       //getElementPositionRelativeToDocument(evt);
       Responsivescroll(evt, thetarget);
     } else {
       //getElementPositionRelativeToDocument(evt)
-      Defaultscroll(evt);
+      
+      Defaultscroll(evt, thetarget);
     }
   });
 }
@@ -164,7 +171,7 @@ for (let l = 1; l < MenuButton.length; l++) {
  }
 
 
-function Defaultscroll(evt) {
+function Defaultscroll(evt, thetarget) {
 
 
   document.getElementById("hamburger").classList.toggle("show");
@@ -172,18 +179,15 @@ function Defaultscroll(evt) {
   ContainMenu.classList.remove("menuclassenter");
 
 
-  for (let k = 0; k < MenuButton.length; k++) {
+ 
    evt.preventDefault();
-   MenuButton[k].addEventListener("click", (event) => {
-     let topRelativeToDocument = getElementPositionRelativeToDocument(section[k]);
-     let offsetPosition = topRelativeToDocument - heropadding - 100; 
+   
+     let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
+     let offsetPosition = topRelativeToDocument - heropadding - 50; 
      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-   });
- }
+     offsetPosition = "";
 
-
-
-}
+   };
 
 
 

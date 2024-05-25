@@ -10,7 +10,6 @@ button.section {
   }
 
 
-  .buttoncontain {display:block; margin: auto; align-items: center;} 
   .clickhere { height:30px; background-color: white; margin:10px; width:90%; align-items: center;}
   .clickhere2 { height:30px; background-color: white; margin:10px; width:250px;}
   
@@ -22,5 +21,5 @@ button.section {
   
   .portfoliodescriptionbox {display:flex; flex-direction: column;}
   
-  .buttoncontain {display:block; margin: auto; align-items: center;} 
+  .buttoncontain {display:block; margin: auto; align-items: center; padding:2rem;} 
   
