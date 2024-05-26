@@ -317,3 +317,27 @@ its being held relative to the top of the docuemnt, not the target element
 I managed to figure out the issue. I had deleted a section that described the titles, but I readded it.
 
 Now I need to figure out intro
+
+Figured out. What I needed to do was to have the location of the evt declared early on. I could just do the scrolling on that AND I didnt have
+an n2 O complexty.
+
+HAving trouble updating to github. may be internet trouble.
+
+I think it is because my page shows New branch instread of main. need to switch.
+
+git push --force origin main can be used
+
+PS C:\Users\danar\WebDevProjects\PersonalSite> git branch --all 
+  main
+  master
+* update
+  remotes/origin/main
+  remotes/origin/update
+
+  need to changed checked out branch?
+
+did git checkout main and
+need to
+ switcged brancges
+
+how do I commit or stash this text file?
