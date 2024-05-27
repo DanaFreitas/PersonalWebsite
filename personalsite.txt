@@ -415,3 +415,11 @@ fixed. need to be more careful with the variable names
 
 Do some element nesting, especially in navbar
 
+
+I was thinking....maybe im too focused on best practices I can worry about next time instead of delivering what is needed. maybe, I can focus more on
+nesting and best way to color swap later.
+
+Maybe I dont need to swap color palletes?
+
+KISS
+
