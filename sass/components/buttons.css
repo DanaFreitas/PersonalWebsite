@@ -10,33 +10,18 @@ button:hover {
 }
 
 .clickhere {
-  height: 30px;
+  height: 2rem;
   background-color: white;
-  margin: 10px;
+  margin: 0.5rem;
   width: 90%;
   align-items: center;
 }
 
 .clickhere2 {
-  height: 30px;
+  height: 2rem;
   background-color: white;
-  margin: 10px;
-  width: 250px;
-}
-
-.clickhere {
-  height: 30px;
-  background-color: black;
-  margin: 10px;
-  width: 90%;
-  align-items: center;
-}
-
-.clickhere2 {
-  height: 30px;
-  background-color: black;
-  margin: 10px;
-  width: 250px;
+  margin: 0.5rem;
+  width: 15rem;
 }
 
 .portfoliodescriptionbox {

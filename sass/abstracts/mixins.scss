@@ -1,0 +1,18 @@
+
+@mixin Light {
+    color: black; background-color: #f0f0f0;
+}
+
+@mixin Dark {
+    color: #f0f0f0; background-color: black;
+
+}
+
+
+
+$themes: (
+    light: (text: black, background-color: #f0f0f0,),
+    black: (text: #f0f0f0, background: black,),
+ );
+ 
+ 

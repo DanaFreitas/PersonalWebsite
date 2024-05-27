@@ -34,6 +34,18 @@
   transition-duration: 500ms;
 }
 
+.header__hamburger--hamburger-bit {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: white;
+  margin: 0.5rem 0;
+}
+
+#hamburgerbox:hover .dropdownitem {
+  height: 2rem;
+  width: 9rem;
+}
+
 @media screen and (min-width: 769) {
   .header__burgerholder > .header__hamburger > * {
     display: none;

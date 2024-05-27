@@ -2,6 +2,7 @@
 
 
 
+const html = document.documentElement;
 
 const widths = window.innerWidth;
 const title = document.getElementById("title");
@@ -11,13 +12,18 @@ let ContainMenu = document.querySelector('[data-menustate="default"]');
 let ContainMenuId = document.getElementById("ContainMenu");
 let ContainMenuChildren = ContainMenu.children;
 let heropadding = document.getElementById("header").clientHeight;
-console.log(heropadding)
-const section = document.querySelectorAll("[data-subheader");
+
+const section = document.querySelectorAll("[data-subheader]");
 let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
 
 
-const btn = document.getElementsByClassName("themebutton");
-const theme = document.querySelector("#themelink")
+const themebutton = document.getElementById("themebutton");
+let themecolor = html.dataset.themecolor;
+
+let datathemelight = document.querySelector('[data-theme="light"]')
+let datathemedark = document.querySelector('[data-theme="dark"]')
+
+//const theme = document.querySelector("#themelink")
 
 
 
@@ -135,22 +141,20 @@ MenuButton[0].addEventListener("click", (evt) => {
   
 })
 
+
+
 for (let l = 1; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
-  
-    let thetarget = section[l]
-
-    
+    //let thetarget = section[l];
+    let thetarget = MenuButton[l];
 
 
 
   
     if (widths > 768) {
 
-      //getElementPositionRelativeToDocument(evt);
       Responsivescroll(evt, thetarget);
     } else {
-      //getElementPositionRelativeToDocument(evt)
       
       Defaultscroll(evt, thetarget);
     }
@@ -158,6 +162,34 @@ for (let l = 1; l < MenuButton.length; l++) {
 }
 
 
+//const title__lightmode = 'title-lightmode';
+//let datatheme = document.querySelector("[data-theme]")
+//      MenuButton[i].setAttribute("data-button", "responsivemenuitem");
+// html.dataset.theme = "dark";
+
+themebutton.addEventListener("click", () => { 
+  //theme.classList.toggle("title")
+  //theme.classList.toggle("title-dark")
+  
+if (themecolor === "light"){
+themecolor = "dark";
+console.log(themecolor)
+}
+
+ else if (themecolor === "dark"){
+   themecolor = "light";
+   console.log(themecolor)
+ }
+
+
+
+})
+  
+  
+  
+
+
+// hamburger.classList.toggle("show");
 
 
 
@@ -206,119 +238,6 @@ function Responsivescroll(evt, thetarget) {
  }
 
 
-
-
-
-
-
-
-
-
-
-
-// addEventListener("load", (event) => {
-//     if (widths > 768) {
-//       ContainMenuId.setAttribute("data-menustate", "responsive");
-//       ContainMenuId.classList.remove("header__defaultmenu--wrapper");
-//       ContainMenuId.classList.add("header__responsivemenu--wrapper");
-  
-//       for (let i = 0; i < MenuButton.length; i++) {
-//         MenuButton[i].setAttribute("data-button", "responsivemenuitem");
-//         MenuButton[i].classList.remove("header__defaultmenu--item");
-//         MenuButton[i].classList.add("header__responsivemenu--item");
-//       }
-  
-//       for (let i = 0; i < ContainMenuChildren.length; i++) {
-//         ContainMenuChildren[i].setAttribute("data-button", "responsivemenuitem");
-//       }
-  
-//     }
-//   });
-  
-//   addEventListener("resize", (event) => {
-//     const widths = window.innerWidth;
-//     if (widths > 768) {
-//       ContainMenuId.setAttribute("data-menustate", "responsive");
-//       ContainMenuId.classList.remove("header__defaultmenu--wrapper");
-//       ContainMenuId.classList.add("header__responsivemenu--wrapper");
-//       ContainMenuId.classList.remove("menuclassenter");
-//       hamburger.classList.remove("show")
-//       ContainMenuId.classList.remove("menuclassexit");
-  
-  
-//       for (let i = 0; i < MenuButton.length; i++) {
-//         MenuButton[i].setAttribute("data-button", "responsivemenuitem");
-//         MenuButton[i].classList.remove("header__defaultmenu--item");
-//         MenuButton[i].classList.add("header__responsivemenu--item");
-//       }
-  
-  
-//     } 
-
-
-  
-//   else if(ContainMenu.classList.contains('menuclassenter')) {
-
-// ContainMenu.classList.remove('header__defaultmenu--wrapper')
-//   }
-
-  
-//   else {
-//     ContainMenu.setAttribute("data-menustate", "default");
-//     ContainMenu.classList.remove("header__responsivemenu--wrapper");
-//     ContainMenu.classList.add("header__defaultmenu--wrapper");
-
-
-//     for (let i = 0; i <= MenuButton.length; i++) {
-//       MenuButton[i].setAttribute("data-button", "defaultmenuitem");
-//       MenuButton[i].classList.remove("header__responsivemenu--item");
-//       MenuButton[i].classList.add("header__defaultmenu--item");
-//     }
-//   }
-// });
-
-
-
-
-
-
- //   for (let l = 0; l < MenuButton.length; l++) {
-   //   MenuButton[l].addEventListener("click", (evt) => {
-     //
-      //    let thehref = MenuArray[l].getAttribute("href");
-//          contain.push(thehref);
-  //       console.log(seccuss3)
-    //    console.log(MenuArray)
-      //        MenuArray[l].addEventListener("click", (evt) => {
-        //        let thehref = MenuArray[l].getAttribute("href");
-          //  console.log(thehref)
-              // let hrefslice = thehref.slice(1);
-            //    window.location.href = `${hrefslice}.html`;
-              //  contain = []
+title__lightmode = false;
             
-      
-        //});
-    
-      //})}  
-    
-    
-    
-
-
-  
-
-
-
-
-
-// //Trigger dropdown menu.
-//  function hamburger() {
-//      var show = document.getElementById("dropdowncontent")
-
-//      if (show.style.display == "none") {
-//          show.style.display = "flex"}
-//      else { show.style.display = "none"}
-    
-//  }
-
-// //})
+   

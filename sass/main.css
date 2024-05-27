@@ -16,7 +16,8 @@ html {
   }
 }
 .subtitle {
-  color: white;
+  color: #f0f0f0;
+  background-color: black;
   font-size: 2.5rem;
   text-align: center;
   margin: 2rem;
@@ -34,33 +35,18 @@ button:hover {
 }
 
 .clickhere {
-  height: 30px;
+  height: 2rem;
   background-color: white;
-  margin: 10px;
+  margin: 0.5rem;
   width: 90%;
   align-items: center;
 }
 
 .clickhere2 {
-  height: 30px;
+  height: 2rem;
   background-color: white;
-  margin: 10px;
-  width: 250px;
-}
-
-.clickhere {
-  height: 30px;
-  background-color: black;
-  margin: 10px;
-  width: 90%;
-  align-items: center;
-}
-
-.clickhere2 {
-  height: 30px;
-  background-color: black;
-  margin: 10px;
-  width: 250px;
+  margin: 0.5rem;
+  width: 15rem;
 }
 
 .portfoliodescriptionbox {
@@ -232,6 +218,18 @@ img.portfolioimagenode {
   transition-duration: 500ms;
 }
 
+.header__hamburger--hamburger-bit {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: white;
+  margin: 0.5rem 0;
+}
+
+#hamburgerbox:hover .dropdownitem {
+  height: 2rem;
+  width: 9rem;
+}
+
 @media screen and (min-width: 769) {
   .header__burgerholder > .header__hamburger > * {
     display: none;
@@ -332,47 +330,11 @@ img.portfolioimagenode {
   display: grid;
   grid-template: "p1" "p2";
 }
-
-#headerwrapper {
+.header #headerwrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: 1rem;
-}
-
-.header__hamburger--hamburger-bit {
-  width: 3rem;
-  height: 0.5rem;
-  background-color: white;
-  margin: 0.5rem 0;
-}
-
-#hamburgerbox:hover .dropdownitem {
-  height: 2rem;
-  width: 9rem;
-}
-
-.dropdownitem {
-  color: white;
-  background-color: black;
-}
-
-#dropdownmenu .dropdownnitem:hover {
-  color: red;
-}
-
-#dropdowncontent {
-  display: none;
-  width: 100%;
-  position: fixed;
-  justify-content: baseline;
-  padding-bottom: 20px;
-  flex-direction: column;
-  margin-top: 30px;
-}
-
-#dropdowncontent:hover {
-  display: block;
 }
 
 .header__defaultmenu--item {
@@ -436,6 +398,15 @@ img.portfolioimagenode {
   }
   .header__burgerholder {
     display: none;
+  }
+  #themebutton {
+    z-index: 11;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1rem 0 0 0;
   }
 }
 #Introduction {

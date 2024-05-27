@@ -344,3 +344,74 @@ how do I commit or stash this text file?
 
 
 5/25 
+
+I think I was pushing to the wrong thing, main instead of update.
+
+I need to have a way to switch dark and light mode
+
+I need to use toggle to do this. 
+WIll ddo by hving an extra class setle, X__lightmode. IT doesnt exist on the elements at first, but the toggle will make it exist and override 
+the first thing.
+
+trying to toggle the lightmode switches on css. The isssue is 
+
+Uncaught TypeError: can't access property "toggle", theme.classlist is undefined
+
+I define that with...why is it undefined?
+
+title__lightmode is ALWAYS tseting false, even when I try to trigger it.
+and why false nd not true? I wrote doen the code. must be a connection
+
+
+5/26
+
+I fixed "section" which has been missing a closing bracket
+
+Needed to replace it. but an issue is that daymode section ISNT a section.
+...It needs to be next to my name
+
+Have the hover effect go next to the dadymode as well
+I needed to finagle with the size to have it be parallele to my name
+
+the console.log works. need the functions to. 
+
+
+//let datatheme = document.querySelector("[data-theme]")
+//let datatheme = document.dataset.theme;
+which one?
+
+
+html.dataset.datatheme = "dark";
+didnt work
+datatheme = "dark";
+did
+
+maybe fix some of the names. i think I got mixed up between theme and datatheme
+
+
+<a  class="nav__button"
+          type="button"
+          data-location="defaulttag"
+          id="themebutton"
+          > Daymode</a
+          >
+const theme = document.getElementById("themebutton");
+	
+<html lang="en" data-theme="light"
+ id="html">
+
+let datatheme = html.dataset.theme;
+
+
+
+change const theme to ---> themebutton
+change data-theme to ----> data-themecolor
+let datatheme be ---> themecolor
+
+
+fixed. need to be more careful with the variable names
+
+5/27
+
+Do some element nesting, especially in navbar
+

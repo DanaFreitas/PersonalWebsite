@@ -10,47 +10,11 @@
   display: grid;
   grid-template: "p1" "p2";
 }
-
-#headerwrapper {
+.header #headerwrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: 1rem;
-}
-
-.header__hamburger--hamburger-bit {
-  width: 3rem;
-  height: 0.5rem;
-  background-color: white;
-  margin: 0.5rem 0;
-}
-
-#hamburgerbox:hover .dropdownitem {
-  height: 2rem;
-  width: 9rem;
-}
-
-.dropdownitem {
-  color: white;
-  background-color: black;
-}
-
-#dropdownmenu .dropdownnitem:hover {
-  color: red;
-}
-
-#dropdowncontent {
-  display: none;
-  width: 100%;
-  position: fixed;
-  justify-content: baseline;
-  padding-bottom: 20px;
-  flex-direction: column;
-  margin-top: 30px;
-}
-
-#dropdowncontent:hover {
-  display: block;
 }
 
 .header__defaultmenu--item {
@@ -114,6 +78,15 @@
   }
   .header__burgerholder {
     display: none;
+  }
+  #themebutton {
+    z-index: 11;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1rem 0 0 0;
   }
 }
 
