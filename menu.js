@@ -1,7 +1,5 @@
 //Link to other pages.
 
-
-
 const html = document.documentElement;
 
 const widths = window.innerWidth;
@@ -15,17 +13,6 @@ let heropadding = document.getElementById("header").clientHeight;
 
 const section = document.querySelectorAll("[data-subheader]");
 let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
-
-
-const themebutton = document.getElementById("themebutton");
-let themecolor = html.dataset.themecolor;
-
-let datathemelight = document.querySelector('[data-theme="light"]')
-let datathemedark = document.querySelector('[data-theme="dark"]')
-
-//const theme = document.querySelector("#themelink")
-
-
 
 //onloading
 
@@ -44,10 +31,8 @@ addEventListener("load", (event) => {
     for (let i = 0; i < ContainMenuChildren.length; i++) {
       ContainMenuChildren[i].setAttribute("data-button", "responsivemenuitem");
     }
-
   }
 });
-
 
 //on resizing
 
@@ -58,31 +43,20 @@ addEventListener("resize", (event) => {
     ContainMenuId.classList.remove("header__defaultmenu--wrapper");
     ContainMenuId.classList.add("header__responsivemenu--wrapper");
     ContainMenuId.classList.remove("menuclassenter");
-    hamburger.classList.remove("show")
+    hamburger.classList.remove("show");
     ContainMenuId.classList.remove("menuclassexit");
-
 
     for (let i = 0; i < MenuButton.length; i++) {
       MenuButton[i].setAttribute("data-button", "responsivemenuitem");
       MenuButton[i].classList.remove("header__defaultmenu--item");
       MenuButton[i].classList.add("header__responsivemenu--item");
     }
-
-
-  } 
-  
-  
-  else if(ContainMenu.classList.contains('menuclassenter')) {
-
-ContainMenu.classList.remove('header__hefaultmenu--wrapper')
-  }
-
-  
-  else {
+  } else if (ContainMenu.classList.contains("menuclassenter")) {
+    ContainMenu.classList.remove("header__hefaultmenu--wrapper");
+  } else {
     ContainMenu.setAttribute("data-menustate", "default");
     ContainMenu.classList.remove("header__responsivemenu--wrapper");
     ContainMenu.classList.add("header__defaultmenu--wrapper");
-
 
     for (let i = 0; i <= MenuButton.length; i++) {
       MenuButton[i].setAttribute("data-button", "defaultmenuitem");
@@ -91,7 +65,6 @@ ContainMenu.classList.remove('header__hefaultmenu--wrapper')
     }
   }
 });
-
 
 //clicking the burger
 
@@ -103,7 +76,6 @@ hamburger.addEventListener("click", () => {
     !ContainMenu.classList.contains("menuclassexit")
   ) {
     ContainMenu.classList.add("menuclassenter");
-
   }
 
   if (
@@ -113,9 +85,7 @@ hamburger.addEventListener("click", () => {
     ContainMenu.classList.remove("header__defaultmenu--wrapper");
     ContainMenu.classList.remove("menuclassexit");
     ContainMenu.classList.add("menuclassenter");
-
   } else if (ContainMenu.classList.contains("menuclassenter")) {
-
     ContainMenu.classList.add("menuclassexit");
     ContainMenu.classList.remove("menuclassenter");
 
@@ -123,121 +93,93 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-
-
 //click a menubutton
 
 
-MenuButton[0].addEventListener("click", (evt) => {
+
+
+// for (let l = 0; l < MenuButton.length; l++) {
+//   MenuButton[l].addEventListener("click", (evt) => {
+  
+  
+//     if (widths > 491) {
+//       Responsivescroll(evt);
+//     } else {
+//       Defaultscroll(evt);
+//     }
+//   });
+// }
 
 
 
+
+
+
+
+
+MenuButton.addEventListener("click", (evt) => {
   document.getElementById("hamburger").classList.toggle("show");
   ContainMenu.classList.add("menuclassexit");
   ContainMenu.classList.remove("menuclassenter");
+});
 
+if (MenuButton[0]) {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  
-  
-})
-
-
+}
 
 for (let l = 1; l < MenuButton.length; l++) {
   MenuButton[l].addEventListener("click", (evt) => {
     //let thetarget = section[l];
+    console.log("Menubutton");
+
     let thetarget = MenuButton[l];
+    console.log(thetarget);
 
-
-
-  
     if (widths > 768) {
-
       Responsivescroll(evt, thetarget);
     } else {
-      
       Defaultscroll(evt, thetarget);
     }
   });
 }
 
-
-//const title__lightmode = 'title-lightmode';
-//let datatheme = document.querySelector("[data-theme]")
-//      MenuButton[i].setAttribute("data-button", "responsivemenuitem");
-// html.dataset.theme = "dark";
-
-themebutton.addEventListener("click", () => { 
-  //theme.classList.toggle("title")
-  //theme.classList.toggle("title-dark")
-  
-if (themecolor === "light"){
-themecolor = "dark";
-console.log(themecolor)
-}
-
- else if (themecolor === "dark"){
-   themecolor = "light";
-   console.log(themecolor)
- }
-
-
-
-})
-  
-  
-  
-
-
 // hamburger.classList.toggle("show");
 
-
-
-
- function getElementPositionRelativeToDocument(thetarget) {
-
-   let rect = thetarget.getBoundingClientRect();
-   let scrollTop = window.scrollY || document.documentElement.scrollTop;
-   let topRelativeToDocument = rect.top + scrollTop;
-   return topRelativeToDocument;
- }
-
+function getElementPositionRelativeToDocument(thetarget) {
+  let rect = thetarget.getBoundingClientRect();
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  let topRelativeToDocument = rect.top + scrollTop;
+  return topRelativeToDocument;
+}
 
 function Defaultscroll(evt, thetarget) {
-
-
   document.getElementById("hamburger").classList.toggle("show");
   ContainMenu.classList.add("menuclassexit");
   ContainMenu.classList.remove("menuclassenter");
 
-
- 
-   evt.preventDefault();
-   
-     let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
-     let offsetPosition = topRelativeToDocument - heropadding - 50; 
-     window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-     offsetPosition = "";
-
-   };
-
-
-
-
-function Responsivescroll(evt, thetarget) {
-   evt.preventDefault();
-
+  evt.preventDefault();
 
   let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
 
-    let offsetPosition = topRelativeToDocument - heropadding - 100; 
+  console.log(`${thetarget} is the target`);
+  console.log(`${topRelativeToDocument} is the toprelativetodocument`);
+  let offsetPosition = topRelativeToDocument - heropadding; //+ 50;
+  console.log(`${heropadding} is the heropadding`);
+  console.log(`${offsetPosition} is the offsetposition`);
+  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  topRelativeToDocument = "";
+  offsetPosition = "";
+}
 
-     window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-     offsetPosition = "";
-    
- }
+function Responsivescroll(evt, thetarget) {
+  evt.preventDefault();
 
+  let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
+
+  let offsetPosition = topRelativeToDocument - heropadding - 100;
+
+  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  offsetPosition = "";
+}
 
 title__lightmode = false;
-            
-   

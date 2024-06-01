@@ -36,4 +36,16 @@ button:hover {
   padding: 2rem;
 }
 
+.portfolio__button {
+  color: black;
+  background-color: white;
+  margin: 1em 1em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.portfolio__button:hover {
+  color: red;
+}
+
 /*# sourceMappingURL=buttons.css.map */

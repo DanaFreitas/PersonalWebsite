@@ -1,17 +1,9 @@
-/* Error: Undefined mixin.
- *   ,
- * 4 |      @include Dark;
- *   |      ^^^^^^^^^^^^^
- *   '
- *   sass\base\typography.scss 4:6  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502       @include Dark;\d\a   \2502       ^^^^^^^^^^^^^\a   \2575 \a   sass\\base\\typography.scss 4:6  root stylesheet";
+.subtitle {
+  color: #f0f0f0;
+  background-color: black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem;
 }
+
+/*# sourceMappingURL=typography.css.map */

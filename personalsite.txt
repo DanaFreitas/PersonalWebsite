@@ -423,3 +423,61 @@ Maybe I dont need to swap color palletes?
 
 KISS
 
+The breakpoint of 1150 is causing issues
+projects:scss:80.
+
+It works out around 1700px wide
+
+
+5/28
+
+for some reson, the "click for website links" are different sizes at a wide enough width
+make the links functional
+maybe make my profile pic a teeeeny bit lower
+...and I tested to see if the sextions changed color on hover and they do nothing even on click
+
+5/29
+
+did the profile pic bit
+for the size issue, I THINK that the fit set of buttons aren't part of the flexbox
+
+shouyld i resize the text, the button size or ignore it?
+
+Got rid of unessesary text.
+
+next time: use github to get url 
+
+5/30
+
+https://www.linkedin.com/in/dana-freitas-69ab7298/
+ https://github.com/DanaFreitas
+
+ The buttons have become clickable, but havent properly linked
+
+ done. is there a way to simplify to fuse the events
+
+test everything tomorrow
+
+
+5/31
+
+curpor property.
+
+plus: the suvsection buttons wont work
+
+"Intro" in mobile: the buttons only move down slightly
+	EXCEPT the intro button, which brings back to the top
+
+"Intro" in pc: the buttons wont move at all.
+	EXCEPT the intro button, which causes the animation trigger to occur, even in pc
+
+
+Its taking the top relativetodocument value and keeps allaying that value downward
+
+check chatgpt
+
+the values are only going down, and a specific amount.
+	need mroe negatives
+	
+
+the event had been menubutton[0] not menubutton 
