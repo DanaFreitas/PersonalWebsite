@@ -59,6 +59,7 @@ padding:3rem 0rem;
 
 
 
+
   
 #title {
   color: white;
@@ -68,6 +69,8 @@ padding:3rem 0rem;
   text-align: center;
   margin: auto;
   }
+
+ 
 
 // #title-dark {
 //   color:black;
@@ -85,10 +88,6 @@ padding:3rem 0rem;
 // }
 
 
-
-.header__responsivemenu--item:hover {
-  //color: $DarkRedColor;
-}
 
 
 
@@ -127,7 +126,16 @@ padding:3rem 0rem;
     z-index: 11;
     color: white;
     text-decoration: none;
-  }}
+  }
+
+
+  .header__responsivemenu--item:hover {
+
+    color:red;
+    
+      }
+
+}
 
 
 

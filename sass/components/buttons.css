@@ -6,7 +6,11 @@ button.section {
 }
 
 button:hover {
-  color: red;
+  cursor: pointer;
+}
+
+button {
+  color: blue;
 }
 
 .clickhere {

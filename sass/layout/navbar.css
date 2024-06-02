@@ -68,6 +68,9 @@
     color: white;
     text-decoration: none;
   }
+  .header__responsivemenu--wrapper .header__responsivemenu--item:hover {
+    color: red;
+  }
   #title {
     font-size: 3rem;
     flex: 1;
@@ -86,6 +89,4 @@
     font-size: 1rem;
     padding: 1rem 0 0 0;
   }
-}
-
-/*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */

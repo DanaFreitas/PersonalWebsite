@@ -9,7 +9,7 @@ const hamburger = document.getElementById("hamburger");
 let ContainMenu = document.querySelector('[data-menustate="default"]');
 let ContainMenuId = document.getElementById("ContainMenu");
 let ContainMenuChildren = ContainMenu.children;
-let heropadding = document.getElementById("header").clientHeight;
+let heropadding = document.getElementById("header").clientHeight * 2;
 
 const section = document.querySelectorAll("[data-subheader]");
 let MenuButton = document.querySelectorAll('[data-button="defaultmenuitem"]');
@@ -111,75 +111,68 @@ hamburger.addEventListener("click", () => {
 // }
 
 
-
-
-
-
-
-
-MenuButton.addEventListener("click", (evt) => {
-  document.getElementById("hamburger").classList.toggle("show");
-  ContainMenu.classList.add("menuclassexit");
-  ContainMenu.classList.remove("menuclassenter");
-});
-
-if (MenuButton[0]) {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-for (let l = 1; l < MenuButton.length; l++) {
+for ( l = 0; l < MenuButton.length; l++) {
+  let targetsection = section[l]
   MenuButton[l].addEventListener("click", (evt) => {
-    //let thetarget = section[l];
-    console.log("Menubutton");
+   // let targetsection = section[l]
 
-    let thetarget = MenuButton[l];
-    console.log(thetarget);
+// if (MenuButton[0]) {
+//   console.log("Monkey")
+//   window.scrollTo({ top: 500, behavior: "smooth" });
+// }
 
-    if (widths > 768) {
-      Responsivescroll(evt, thetarget);
+//console.log(evt)
+//console.log(evt.target.href)
+//let thetarget = evt.target.href;
+
+   //else
+   
+   if (widths > 768) {
+      Responsivescroll(evt,targetsection);
     } else {
-      Defaultscroll(evt, thetarget);
+      Defaultscroll(evt,targetsection);
     }
-  });
+  
 }
+)}
 
-// hamburger.classList.toggle("show");
-
-function getElementPositionRelativeToDocument(thetarget) {
-  let rect = thetarget.getBoundingClientRect();
+function getElementPositionRelativeToDocument(targetsection) {
+  let rect = targetsection.getBoundingClientRect();
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   let topRelativeToDocument = rect.top + scrollTop;
   return topRelativeToDocument;
 }
 
-function Defaultscroll(evt, thetarget) {
+function Defaultscroll(evt, targetsection) {
   document.getElementById("hamburger").classList.toggle("show");
   ContainMenu.classList.add("menuclassexit");
   ContainMenu.classList.remove("menuclassenter");
 
   evt.preventDefault();
 
-  let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
+  let topRelativeToDocument = getElementPositionRelativeToDocument(targetsection);
 
-  console.log(`${thetarget} is the target`);
-  console.log(`${topRelativeToDocument} is the toprelativetodocument`);
-  let offsetPosition = topRelativeToDocument - heropadding; //+ 50;
-  console.log(`${heropadding} is the heropadding`);
-  console.log(`${offsetPosition} is the offsetposition`);
+
+  let offsetPosition = topRelativeToDocument - heropadding ;
+
   window.scrollTo({ top: offsetPosition, behavior: "smooth" });
   topRelativeToDocument = "";
   offsetPosition = "";
 }
 
-function Responsivescroll(evt, thetarget) {
+function Responsivescroll(evt, targetsection) {
   evt.preventDefault();
 
-  let topRelativeToDocument = getElementPositionRelativeToDocument(thetarget);
+  let topRelativeToDocument = getElementPositionRelativeToDocument(targetsection);
 
-  let offsetPosition = topRelativeToDocument - heropadding - 100;
+  let offsetPosition = topRelativeToDocument - heropadding ;
 
   window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  topRelativeToDocument = "";
+
   offsetPosition = "";
-}
+}//}
+
+
 
 title__lightmode = false;

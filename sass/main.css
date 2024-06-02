@@ -31,7 +31,11 @@ button.section {
 }
 
 button:hover {
-  color: red;
+  cursor: pointer;
+}
+
+button {
+  color: blue;
 }
 
 .clickhere {
@@ -403,6 +407,9 @@ img.portfolioimagenode {
     z-index: 11;
     color: white;
     text-decoration: none;
+  }
+  .header__responsivemenu--wrapper .header__responsivemenu--item:hover {
+    color: red;
   }
   #title {
     font-size: 3rem;

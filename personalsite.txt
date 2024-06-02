@@ -481,3 +481,50 @@ the values are only going down, and a specific amount.
 	
 
 the event had been menubutton[0] not menubutton 
+
+6/1
+
+Had to rework some of the functions to make the menu work.
+
+How I need to tweak the scrollto function.
+Also, need to do a hover: red text. 
+
+
+thettarget needs to be declared. thetarget need to be the href. this is likely why the event is being triggrered, but the scrolling
+and the heropadding isnt working.
+
+
+
+
+ console.log(section[l])
+ why isnt this running?
+
+ I read about IIFE. It turns out there is scope polluting. 
+
+
+for ( l = 0; l < MenuButton.length; l++) 
+  MenuButton[l].addEventListener("click", (evt) => {})
+
+The two [l] are different.
+
+onload, ALL of the loop is run before the click
+
+MenuButton[l] isnt representing a number, its representing "MenuButton.length"
+
+solution. Move the delcaration of let targetsection = section[l] before the eventlistener
+	That works...except for the intro button
+
+I think that might be related to the fact that the title is(?) fixed on top
+
+I added data-subheader="opening" to the openingsection.
+This works...almost, but there are now warpedness in terms of the loops. ex, contact is sending to the skills section
+
+6/2
+
+thats because there are now 5 data-subheaders, one for my intoduction paragraph and one for my title
+
+I need to figure out which on eis best
+
+I at first used base values to try to apply a padding to the scrolling function.
+A better idea is to use a multiplier that will adjust to the height.
+I largely just need a best idea on what to use
