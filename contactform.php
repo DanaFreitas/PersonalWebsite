@@ -1,6 +1,4 @@
-<?php
-
-
+<!--  
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -36,7 +34,6 @@ echo "Sending Successful";
 
 }
 
-catch(Exception $e) {
-echo "It failed.{$mail->ErrorInfo}";}
-
-?> 
+//catch(Exception $e) {
+//echo "It failed.{$mail->ErrorInfo}";}
+ -->
