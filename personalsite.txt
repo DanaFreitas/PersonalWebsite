@@ -528,3 +528,5 @@ I need to figure out which on eis best
 I at first used base values to try to apply a padding to the scrolling function.
 A better idea is to use a multiplier that will adjust to the height.
 I largely just need a best idea on what to use
+
+I used a 2x multiplier 
