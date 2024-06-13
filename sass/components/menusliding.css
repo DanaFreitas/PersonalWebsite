@@ -5,7 +5,7 @@
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: black;
   color: black;
   height: 100%;
   width: 100%;
@@ -24,7 +24,7 @@
   display: block;
   z-index: 40;
   position: fixed;
-  background-color: grey;
+  background-color: black;
   color: black;
   height: 100%;
   width: 50%;
