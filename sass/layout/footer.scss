@@ -1,26 +1,95 @@
 
-.footerbutton {
+// .footerbutton {
+//     display:none;
+//   }
+  // .footerimg {
+  //   height: 50px;
+  //   width: 50px;
+  // }
+  //  #footer {
+  //    display: grid;
+  //    grid-gap: 0px;
+  //    grid-template-columns: 1fr 1fr 1fr;
+  //    justify-content: space-evenly;
+  //    background-color: black;
+  //    padding: 30px 0px;
+  //    justify-content: center;
+  //    align-items: center;    
+  
+  //  }
+
+  
+  #contactmetitle {background-color: none;}
+
+
+  .footerbutton {
     display:none;
   }
   .footerimg {
-    height: 50px;
-    width: 50px;
-  }
-  #footer {
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    background-color: black;
-    padding: 30px 0px;
-    justify-items: center;
+    height: 3.5rem;
+    width: 3.5rem;  
+    margin:1rem 0rem;
   }
 
-  #contactmetitle {background-color: none;}
+  #footerparagraph {
+    color:white;
+    padding:1rem;
+  }
+
+
+  #footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:  black;
+    padding: 2rem 0rem;
+    //justify-items: center;
+    width:100%;
+     justify-content: center;
+     align-items: center;    
+  
+  }
+
+
+
+
+
+
+  #linkcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media only screen and (min-width: 769px) 
   
-  {  #footer {grid-gap: 20px;}
+  {  
+    
+//     #footer {//grid-gap: 20px;    
+//     display: grid;
+//    // grid-template-columns: 1fr 1fr 1fr;
+//     justify-content: space-evenly;
+//     background-color: black;
+//     padding: 4rem 0px;
+//     justify-items: center;
+// }
   
   .footerbutton {
     background-color: black;
@@ -31,60 +100,21 @@
     .footerimg {
       height: 100px;
       width: 100px;
+
+    margin:2rem;
     }
   
+
+#linkcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around ;
+  
+}
+
+
   }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-  .footerbutton {
-    display:none;
-  }
-  .footerimg {
-    height: 3.5rem;
-    width: 3.5rem;  
-  }
-  #footer {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color:  black;
-    padding: 2rem 0rem;
-    justify-items: center;
-    width:100%;
-  }
-  
-
-
-  
-  @media only screen and (min-width: 769px) 
-  
-  {  
-  
-  .footerbutton {
-    background-color:  #f0f0f0;
-    color: black;
-    border: none;
-    font-size: 20px;}
-  
-    .footerimg {
-      height: 100px;
-      width: 100px;
-    }
-  
-  }
